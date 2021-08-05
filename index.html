@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Responsive meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link href="css/all.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favico.png">
+
+    <title>PSCM Construction & Interiors Ltd.</title>
+  </head>
+  <body>
+    <!-- Header Area (with responsive navbar) -->
+    <header>
+      <div class="social-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="#" class="text-white" style="font-variant: unset; font-size: 12px;" data-toggle="modal" data-target="#loginModal"><i class="fa fa-user" style="margin-right: 5px;"></i> Colleague Login</a>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <img src="images/logo.png" alt="logo" width="32" height="32" style="margin-right: 10px" />
+                    <h5 class="modal-title" id="loginModalTitle">Colleague Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="loginEmail1">Email address</label>
+                        <input type="email" class="form-control" id="loginEmail1" aria-describedby="emailHelp" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="loginPassword1">Password</label>
+                        <input type="password" class="form-control" id="loginPassword1" required>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-7 d-flex justify-content-end" style="margin-left: 65px;">
+              <a href="#"><i class="fab fa-facebook-square text-white"></i></a>
+              <a href="#"><i class="fab fa-twitter-square text-white"></i></a>
+              <a href="#"><i class="fab fa-pinterest-square text-white"></i></a>
+              <a href="#"><i class="fab fa-linkedin text-white"></i></a>        
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="PSCM logo"></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item navbar-brand">
+                <a href="#" class="nav-link active font-weight-bold">home</a>
+              </li>
+              <li class="nav-item navbar-brand">
+                <a href="about.html" class="nav-link text-primary">about us</a>
+              </li>
+              <li class="nav-item navbar-brand">
+                <a href="ourwork.html" class="nav-link text-primary">our work</a>
+              </li>
+              <li class="nav-item navbar-brand">
+                <a href="contact.html" class="nav-link text-primary">contact us</a>
+              </li>
+              <li class="nav-item navbar-brand">
+                <button class="nav-link btn btn-primary text-white cta" data-toggle="modal" data-target="#exampleModalCenter">Get a quote</a></button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="images/logo.png" alt="logo" width="32" height="32" style="margin-right: 10px" />
+              <h5 class="modal-title" id="exampleModalLongTitle">Get a quote</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+              <div class="form-group">
+                  <label for="client-name">Your name</label>
+                  <input type="text" class="form-control" id="client-name">
+                </div>
+                <div class="form-group">
+                  <label for="client-email">Your email address</label>
+                  <input type="email" class="form-control" id="client-email" aria-describedby="emailHelp" required>
+                  <small id="emailHelp" class="form-text">We'll never share your address with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="client-tel-number">Your contact number</label>
+                  <input type="tel" class="form-control" id="client-tel-number" aria-describedby="telephoneHelp">
+                </div>
+                <div class="form-group">
+                  <label for="client-message">Your message</label>
+                  <textarea rows="5" class="form-control" id="client-message" placeholder="A brief description of the job you require undertaking..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="padding-inline: 20px;">Close</button>
+                <button type="submit" class="btn btn-primary" style="padding-inline: 20px;">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-primary"><i class="fa fa-chevron-up"></i></button>
+      <div class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-10 text-center text-white hero-title">
+              <img src="images/logo-big.png" />
+              <h1>professional shopfitting. commercial magic.</h1>
+              <p>&nbsp;</p>
+              <button type="button" class="btn btn-primary cta" style="padding-inline: 20px; margin-bottom: 20px;" data-toggle="modal" data-target="#exampleModalCenter">Get a quote</button>
+              <button type="button" class="btn btn-outline-light cta" style="margin-bottom: 20px;">View our work</button>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-us">
+        <div class="container">
+          <h2 class="text-primary">About us</h2>
+          <hr />
+          <section>
+            PSCM Construction & Interiors fit out projects in the Restaurant, Hotel Bar, Hospitality and Leisure markets, High Street Retail outlets and
+            Commercial environments throughout the United Kingdom.
+            <p></p>
+            We are based in Cumbernauld, however, we offer national coverage extending from Glasgow, Edinburgh, Stirling, Aberdeen, Inverness
+            and Dundee to Manchester, York, Liverpool, Birmingham, Cardiff and London.
+            <p></p>
+            <a href="about.html">read more</a>
+          </section>
+        </div>
+      </div>
+
+        <div class="what-we-do">
+          <div class="container">
+            <h2 class="text-primary">What we do</h2>
+            <hr />
+            <section>
+              <div class="row">
+                <div class="col-sm-4" style="margin-bottom: 30px;">
+                  <div class="card">
+                    <div class="card-body card-shadow">
+                      <img class="card-img-top" src="images/interiors.png" alt="Card image cap">
+                    </div>
+                    <div class="card-footer bg-primary text-white">
+                      Design interiors
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body card-shadow">
+                      <img class="card-img-top" src="images/shopfitting.png" alt="Card image cap">
+                    </div>
+                    <div class="card-footer bg-primary text-white">
+                      Shopfitting
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body card-shadow">
+                      <img class="card-img-top" src="images/internal-fitouts.png" alt="Card image cap">
+                    </div>
+                    <div class="card-footer bg-primary text-white">
+                      Internal fit outs
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body card-shadow">
+                      <img class="card-img-top" src="images/refurbishments.png" alt="Card image cap">
+                    </div>
+                    <div class="card-footer bg-primary text-white">
+                      Refurbishments
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body card-shadow">
+                      <img class="card-img-top" src="images/construction.png" alt="Card image cap">
+                    </div>
+                    <div class="card-footer bg-primary text-white">
+                      Construction Projects
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+      </div>
+      <div class="likeus">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 text-white font-weight-bold desktop">
+              Want to see your idea come to life?
+            </div>
+            <div class="col-5 d-flex justify-content-end desktop">
+              <button type="button" class="btn btn-outline-light desktop" data-toggle="modal" data-target="#exampleModalCenter">Get a quote</button>
+            </div>
+            <div class="mobile-cta">
+              <div class="col-12 text-center text-white">
+                <p>Want to see your idea come to life?</p>
+                <button type="button" class="btn btn-outline-light cta" data-toggle="modal" data-target="#exampleModalCenter">Get a quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ourwork">
+        <div class="container">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-10 text-center text-white">
+              <p>&nbsp;</p>
+              <h1>Our work</h1>
+              <p>&nbsp;</p>
+              <h2>Find the inspiration you've been looking for.</h2>
+              <p>&nbsp;</p>
+              <a href="ourwork.html" class="btn btn-outline-light cta" style="font-variant: unset;">View our work</a>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+          <div class="container">
+            <h2 class="text-primary">Contact us</h2>
+            <hr />
+            <section>
+              <div class="row">
+                <div class="col-sm-6" style="margin-bottom: 30px;">
+                  <div>
+                    <div>
+                      <p>We look forward to working with clients who have an eye for detail and a love of high quality. If you are searching for a team for your next project, we would be delighted to provide you with a quote.</p>
+
+              <p>You can contact us using the details below or by filling out the form on the right:</p>
+              <ul class="location">
+                <li><i class="fa fa-map-marker-alt"></i>63 Napier Road, Wardpark North, Cumbernauld, G68 0EF</li>
+                <li><i class="fa fa-phone" style=" -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);"></i><a href="tel:01236 222 353" class="btn btn-outline-primary">01236 222 353</a></li>
+                <li><i class="fa fa-envelope"></i><a href="mailto:kevin@pscm.uk" class="btn btn-outline-primary" style="font-size: 18px;">kevin@pscm.uk</a></li>
+              </ul>            
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6" style="margin-bottom: 30px;">
+                  <div class="card">
+                    <div class="card-body card-shadow bg-primary text-white">
+                      <form>
+                <div class="form-group">
+                  <label for="client-name1">Your name</label>
+                  <input type="text" class="form-control" id="client-name1">
+                </div>
+                <div class="form-group">
+                  <label for="client-email1">Your email address</label>
+                  <input type="email" class="form-control" id="client-email1" aria-describedby="emailHelp" required>
+                  <small id="emailHelp" class="form-text">We'll never share your address with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="client-message">Your message</label>
+                  <textarea class="form-control" id="exampleInputPassword1" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light cta font-weight-bold">Get in touch</button>
+              </form>
+                    </div>
+                  </div>
+                </div>
+    </main>
+    <footer>
+      <div class="footer-links">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="images/logo.png">
+            </div>
+            <div class="col-sm-4">
+              <p>Navigation.</p>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="ourwork.html">Our work</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 social">
+              <p>Keep Connected.</p>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-pinterest-square"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="copyright-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">&copy; PSCM Construction & Interiors Ltd. 2021.</div>
+          <div class="col-sm-4"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- Javascript for back to top scroll button -->
+    <script src="js/backToTop.js"></script>
+    <!-- JavaScript for Bootstrap components -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Javascript for services section -->
+    <script src="js/fadein.js"></script>
+  </body>
+</html>

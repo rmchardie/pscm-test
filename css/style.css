@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mobile-cta {
+  display: none;
+}
+
+.social-header {
+  background-color: #0077ff;
+}
+
+.social-header a {
+  margin-inline: 5px;
+}
+
+@media screen and (max-width: 990px){
+  img {
+    height: 40%;
+  }
+
+  .cta {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .social {
+    margin-bottom: 20px;
+  }
+
+  .mobile-cta {
+    display: block;
+ 
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .social-header {
+    display: none;
+  }
+}
+
+a {
+ font-variant: small-caps;
+font-size: 20px;
+ }
+
+ hr {
+  background-color:rgba(0, 119, 255, 0.1)
+ }
+
+ section {
+  color: #333;
+ }
+
+.what-we-do {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.what-we-do.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.hero {
+  padding-bottom: 30px;
+  background-image: url('../images/hero.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: relative;
+}
+
+.hero-title h1{ 
+  font-variant: small-caps; 
+  font-size: 2rem; 
+  font-weight: bold;
+  padding:  0;
+  margin: 0;
+}
+
+.hero button, .likeus button, .ourwork button {
+  border-radius: 10px;
+}
+
+.about-us {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.what-we-do {
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-shadow {
+  box-shadow: 0px 2px 2px 1px #ccc;
+  }
+
+.likeus {
+  display: block;
+  position: relative;
+  background-color: #0077ff;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.ourwork {
+  padding-bottom: 3rem;
+  background-image: url('../images/ourwork.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.footer-links {
+  display: block;
+  position: relative;
+  padding: 20px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #e8e8e8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer a {
+  font-variant: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+footer i {
+  margin-right: 20px;
+  font-size: 36px;
+}
+
+.card img {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card img:hover {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+} 
+
+.contact-form i {
+  margin-right: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+}
+
+.gallery a {
+  text-decoration: none;
+}
+
+.gallery a img:hover {
+  border-radius: 10px;
+  border: solid 2px #0077ff;
+}

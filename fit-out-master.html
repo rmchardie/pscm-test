@@ -16,56 +16,19 @@
 
     <link rel="shortcut icon" href="images/favico.png">
 
-    <title>Our work - PSCM Construction & Interiors Ltd.</title>
+    <title>Fit out Projects - PSCM Construction & Interiors Ltd.</title>
   </head>
   <body>
     <!-- Header Area (with responsive navbar) -->
     <header>
       <div class="social-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <a href="#" class="text-white" style="font-variant: unset; font-size: 12px;" data-toggle="modal" data-target="#loginModal"><i class="fa fa-user" style="margin-right: 5px;"></i> Colleague Login</a>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <img src="images/logo.png" alt="logo" width="32" height="32" style="margin-right: 10px" />
-                    <h5 class="modal-title" id="loginModalTitle">Colleague Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <label for="loginEmail1">Email address</label>
-                        <input type="email" class="form-control" id="loginEmail1" aria-describedby="emailHelp" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="loginPassword1">Password</label>
-                        <input type="password" class="form-control" id="loginPassword1" required>
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Log in</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-7 d-flex justify-content-end" style="margin-left: 65px;">
+            <div class="ms-auto col-10 d-flex justify-content-end" style="margin-left: 100px;">
               <a href="#"><i class="fab fa-facebook-square text-white"></i></a>
               <a href="#"><i class="fab fa-twitter-square text-white"></i></a>
               <a href="#"><i class="fab fa-pinterest-square text-white"></i></a>
               <a href="#"><i class="fab fa-linkedin text-white"></i></a>        
             </div>
           </div>
-        </div>
-      </div>
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#"><img src="images/logo.png" alt="PSCM logo"></a>
@@ -74,21 +37,26 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item navbar-brand">
+              <li class="nav-item">
                 <a href="index.html" class="nav-link text-primary">home</a>
               </li>
-              <li class="nav-item navbar-brand text-primary">
-                <a href="#" class="nav-link text-primary">about us</a>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link text-primary">about us</a>
               </li>
-              <li class="nav-item navbar-brand">
-                <a href="ourwork.html" class="nav-link active font-weight-bold">our work</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  what we do
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">build</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item active font-weight-bold" href="#">fit out</a>
+                </div>
               </li>
-              <li class="nav-item navbar-brand">
+              <li class="nav-item">
                 <a href="contact.html" class="nav-link text-primary">contact us</a>
               </li>
-              <li class="nav-item navbar-brand">
-                <button class="nav-link btn btn-primary text-white cta" data-toggle="modal" data-target="#exampleModalCenter">Get a quote</a></button>
-              </li>
+              
             </ul>
           </div>
         </nav>
@@ -136,61 +104,97 @@
 
     <main>
       <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-primary"><i class="fa fa-chevron-up"></i></button>
-
-        <div class="container">
+      <div class="container">
+        <h1>Retail</h1>
+          <div class="row">
+              <div class="col-md text-center">
+                  <img src="images/baynes-alva.jpg" height="60%" alt="Bayne's, Alva shop exterior">
+                  <button class="btn btn-outline-primary">&lt;</button>
+                  <button class="btn btn-primary">&gt;</button>
+              </div>
+              <div class="col-md">
+                  <h2 class="text-primary">Bayne's</h2>
+                  <h5><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>Alva</h5>
+                  <hr>
+                  <p>
+                    PSCM carried out the complete strip out and refurbishment, including new shop front and full interior fit out.
+                  </p>
+                  <p>
+                    This project was successfully carried out and completed over a 9 day programme period.
+                  </p>
+                </div>
+          </div>
           <div class="row">
             <div class="col-md">
-              <h1 class="text-primary">Our work</h1>
-              <hr />
-              <div class="text-center">Click on an image below for more details</div>
-          </div>
+                <h1 class="text-primary">Sterling Home</h1>
+                <h5><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>Dunfermline</h5>
+                <hr>
+                <p>
+                  PSCM supplied and installed a full new interior fit out of this new Sterling Home store, including merchandising units and display fixtures. 
+                </p>
+              </div>
+              <div class="col-md text-center"><img src="images/sterling-dunfermline1.JPG" alt="Sterling Home interior">
+                <button class="btn btn-outline-primary">&lt;</button>
+                <button class="btn btn-primary">&gt;</button></div>
         </div>
-        <div class="row p-5 text-center gallery">
+        <div class="row">
+          <div class="col-md text-center"><img src="images/sterling-glasgow1.jpg" alt="Sterling Home interior Glasgow">
+            <button class="btn btn-outline-primary">&lt;</button>
+            <button class="btn btn-primary">&gt;</button></div>
           <div class="col-md">
-            <a href="#" id="1" onclick="showImage(this.id)">
-              <img src="images/work1.jpg" alt="Project 1" class="img-thumbnail img-fluid" width="300px"  data-toggle="modal" data-target="#workModal">
-            </a>  
-            <a href="#" id="2" onclick="showImage(this.id)">
-              <img src="images/work2.jpg" alt="Project 2" class="img-thumbnail img-fluid" width="300px"  data-toggle="modal" data-target="#workModal">
-            </a>
-            <a href="#" id="3" onclick="showImage(this.id)">
-              <img src="images/work3.jpg" alt="Project 3" class="img-thumbnail img-fluid" width="300px"  data-toggle="modal" data-target="#workModal">
-            </a>
-            <a href="#" id="4" onclick="showImage(this.id)">
-              <img src="images/work4.jpg" alt="Project 4" class="img-thumbnail img-fluid" width="300px"  data-toggle="modal" data-target="#workModal">
-            </a>
-            <a href="#" id="5" onclick="showImage(this.id)">
-              <img src="images/work5.jpg" alt="Project 5" class="img-thumbnail img-fluid" width="300px"  data-toggle="modal" data-target="#workModal">
-            </a>
-            <a href="#" id="6" onclick="showImage(this.id)">
-              <img src="images/work6.jpg" alt="Project 6" class="img-thumbnail img-fluid" width="300px"  data-toggle="modal" data-target="#workModal">
-            </a>
+              <h1 class="text-primary">Sterling Home</h1>
+              <h5><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>London Road, Glasgow</h5>
+              <hr>
+              <p>PSCM were principle contractor in the extensive refurbishment of the exterior and interior of Sterling Home, London Road.</p>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+            <h1 class="text-primary">Clansman Hotel Gift Shop</h1>
+            <h5><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>Loch Ness</h5>
+            <hr>
+            <p>
+              PSCM carried out the design and installation of a new tourist gift shop within the Clansman Hotel including the commisioning of a full scale model of <i>Nessie</i>.
+            </p>
           </div>
-          <!-- Modal -->
-      <div class="modal fade" id="workModal" tabindex="-1" role="dialog" aria-labelledby="workModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="imageModalTitle"></h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img src="images/work1.jpg" alt="Work Image 1" class="img-fluid" id="workImg">
-            </div>
-            <div class="modal-footer">
-                <button type="button" id="prevBtn" class="btn btn-secondary" style="padding-inline: 20px;" onclick="prevImage()" disabled>
-                  <i class="fa fa-chevron-left" style="margin-right: 5px;"></i>
-                  Previous
-                </button>
-                <button type="button" id="nextBtn" class="btn btn-primary" style="padding-inline: 40px;" onclick="nextImage()">
-                  Next
-                  <i class="fa fa-chevron-right" style="margin-left: 5px;"></i>
-                </button>
-            </div>
-          </div>
+          <div class="col-md text-center"><img src="images/loch-ness.jpg" height="60%" alt="Clansman Hotel Gift Shop - Loch Ness">
+            <button class="btn btn-outline-primary">&lt;</button>
+            <button class="btn btn-primary">&gt;</button></div>
+    </div>
+    <h1>Hospitality</h1>
+    <div class="row">
+      <div class="col-md text-center"><img src="images/clansman1.jpg" alt="Clansman Hotel - Loch Ness">
+        <button class="btn btn-outline-primary">&lt;</button>
+        <button class="btn btn-primary">&gt;</button></div>
+      <div class="col-md">
+          <h1 class="text-primary">Clansman Hotel</h1>
+          <h5><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>Loch Ness</h5>
+          <hr>
+          <p>
+            PSCM were the principle contractor for a full refurbishment of bedrooms including full bathroom fit out and supply of bedroom furniture.
+          </p>
         </div>
+        <div class="row">
+          <div class="col-md">
+              <h1 class="text-primary">Sprinkle Tops</h1>
+              <h5><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>Bonnybridge</h5>
+              <hr>
+              <p>
+                PSCM carried out the design and full all-trades refurbishment of this quality ice cream shop.
+              </p>
+            </div>
+            <div class="col-md text-center"><img src="images/sprinkle-tops.jpg" alt="Sprinkle Tops interior">
+              <button class="btn btn-outline-primary">&lt;</button>
+              <button class="btn btn-primary">&gt;</button></div>
+  </div>
+    Cobbs Dunfermline
+    <!--
+      As part of the creation of Sterling Home store, PSCM carried out the installation of the new Cobbs cafe including full commercial kitchen installation and front of house area for 60 covers.
+    -->
+    Cobbs London Road
+    <!--
+      As part of the refurbishment of Sterling Home store, PSCM gave Cobbs cafe a modern face lift and fit out.
+    -->
       </div>
     </main>
     <footer>
@@ -203,8 +207,8 @@
             <div class="col-sm-4">
               <p>Navigation.</p>
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About us</a></li>
                 <li><a href="ourwork.html">Our work</a></li>
                 <li><a href="contact.html">Contact us</a></li>
               </ul>
@@ -231,11 +235,12 @@
   </footer>
     <!-- Javascript for back to top scroll button -->
     <script src="js/backToTop.js"></script>
-    <script src="js/changeImage.js"></script>
     <!-- JavaScript for Bootstrap components -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Javascript for services section -->
+    <script src="js/fadein.js"></script>
   </body>
 </html>

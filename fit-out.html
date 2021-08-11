@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Responsive meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link href="css/all.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/android-chrome-512x512.png">
+
+    <title>Fit out Projects - PSCM Construction & Interiors Ltd.</title>
+  </head>
+  <body>
+    <!-- Header Area (with responsive navbar) -->
+    <header>
+      <div class="container menu">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand logo-big" href="index.html"><img src="images/logo.png" alt="PSCM logo"></a>
+            <div class="navbar-nav navbar-brand logo"><a href="#">PSCM</a></div>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link text-primary">home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link text-primary">about us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    what we do
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="build.html">
+                      <i class="fas fa-tools" style="margin-right: 10px;"></i>build
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item bg-primary text-white" href="#">
+                      <i class="fas fa-store-alt" style="margin-right: 10px;"></i>fit outs
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="btn btn-primary">contact us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+    </header>
+
+    <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-primary"><i class="fa fa-chevron-up"></i></button>
+      <div class="container">
+        <h1 class="text-secondary">
+            Fit outs
+        </h1>
+      </div>
+      <div class="container page-content">
+          <div class="row">
+              <div class="col-md">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#retail" class="nav-link active">Retail</a></li>
+                    <li><a data-toggle="tab" href="#hospitality" class="nav-link">Hospitality</a></li>
+                  </ul>
+                
+                  <div class="tab-content">
+                    <div id="retail" class="tab-pane active">
+                        <div class="row mt-5 mb-5">
+                          <div class="col-md">
+                              <h3 class="text-secondary">Sterling Home</h3>
+                              <h6><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>Dunfermline</h6>
+                              <hr>
+                              <p>
+                                PSCM supplied and installed a full new interior fit out of this new Sterling Home store, including merchandising units and display fixtures. 
+                              </p>
+                            </div>
+                            <div class="col-md text-center"><img src="images/sterling-dunfermline1.JPG" alt="Image of Sterling Home interior - Dunfermline" id="sterlingDunf">
+                                <div>
+                                    <button class="btn btn-md btn-left btn-outline-primary">&lt;</button>
+                                </div>
+                                <div>
+                                    <button class="btn btn-right btn-primary" onclick="changeImage('sterling-dunfermline', 'sterlingDunf');">&gt;</button>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="row mt-5 mb-5">
+                        <div class="col-sm-6 order-sm-12">
+                            <h3 class="text-secondary w-100">Sterling Home</h3>
+                            <h6><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>London Road, Glasgow</h6>
+                            <hr>
+                            <p>PSCM were principle contractor in the extensive refurbishment of the exterior and interior of Sterling Home, London Road.</p>
+                        </div>
+                        <div class="col-sm-6 order-sm-1">
+                            <img src="images/sterling-glasgow1.jpg" alt="Sterling Home interior Glasgow" id="sterlingGlasgow" class="w-100">
+                            <div>
+                                <button class="btn btn-md btn-left btn-outline-primary">&lt;</button>
+                            </div>
+                            <div>
+                                <button class="btn btn-right btn-primary" onclick="changeImage('sterling-glasgow', 'sterlingGlasgow');">&gt;</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row mt-5 mb-5">
+                      <div class="col-md">
+                          <h3 class="text-secondary">Clansman Hotel Gift Shop</h3>
+                          <h6><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>Loch Ness</h6>
+                          <hr>
+                          <p>
+                            PSCM carried out the design and installation of a new tourist gift shop within the Clansman Hotel including the commisioning of a full scale model of <i>Nessie</i>.
+                          </p>
+                        </div>
+                        <div class="col-md text-center"><img src="images/loch-ness.jpg" height="488px" alt="Clansman Hotel Gift Shop - Loch Ness" id="clansman">
+                            <div>
+                                <button class="btn btn-md btn-left btn-outline-primary">&lt;</button>
+                            </div>
+                            <div>
+                                <button class="btn btn-right btn-primary" onclick="changeImage('clansman', 'clansman');">&gt;</button>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="row mt-5 mb-5">
+                    <div class="col-sm-6 order-sm-12">
+                        <h3 class="text-secondary w-100">Bayne's</h3>
+                        <h6><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>Alva</h6>
+                        <hr>
+                        <p>
+                          PSCM carried out the complete strip out and refurbishment, including new shop front and full interior fit out.
+                        </p>
+                        <p>
+                          This project was successfully carried out and completed over a 9 day programme period.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 order-sm-1">
+                        <img src="images/baynes-alva.jpg" alt="Bayne's - Alva" height="488px" id="baynes-alva" class="w-100">
+                        <div>
+                            <button class="btn btn-md btn-left btn-outline-primary">&lt;</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-right btn-primary" onclick="changeImage('baynes-alva', 'baynes-alva');">&gt;</button>
+                        </div>
+                      </div>
+                </div>
+                    </div>
+                    <div id="hospitality" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md text-center"><img src="images/clansman1.jpg" alt="Clansman Hotel - Loch Ness">
+                              <button class="btn btn-outline-primary">&lt;</button>
+                              <button class="btn btn-primary">&gt;</button></div>
+                            <div class="col-md">
+                                <h1 class="text-primary">Clansman Hotel</h1>
+                                <h5><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i>Loch Ness</h5>
+                                <hr>
+                                <p>
+                                  PSCM were the principle contractor for a full refurbishment of bedrooms including full bathroom fit out and supply of bedroom furniture.
+                                </p>
+                              </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- Logo -->
+          <div class="col-md">
+            <a href="#"><img src="images/logo.png" alt="bottom PSCM logo"></a>
+          </div>
+          <!-- Navigation -->
+          <div class="col-md footer-links">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                What we do
+                <a href="build.html"><i class="fas fa-tools" style="margin-right: 10px;"></i>Build</a>
+                <a href="#" class="active text-secondary"><i class="fas fa-store-alt" style="margin-right: 10px;"></i>Fit outs</a>
+              </li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <!-- Social Media -->
+          <div class="col-md social-links">
+            <h5>Keep Connected</h5>
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link h2 text-primary" href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h2 text-primary" href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h2 text-primary" href="#"><i class="fab fa-pinterest-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h2 text-primary" href="#"><i class="fab fa-linkedin"></i></a>
+              </li>                
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript for back to top scroll button -->
+    <script src="js/backToTop.js"></script>
+    <!-- JavaScript for Bootstrap components -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Javascript for services section -->
+    <script src="js/fadein.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/changeImage.js"></script>
+  </body>
+</html>

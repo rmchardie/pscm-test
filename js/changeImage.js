@@ -30,6 +30,8 @@ function showImage(clickedImage) {
 	imageContainer.alt="Work Image" + num;
 	title.innerHTML="Work Image " + num;
 	checkNum();
+	console.log("Current image is: " + image);
+	console.log("Image ID: " + num);
 }
 
 function nextImage() {
@@ -39,6 +41,8 @@ function nextImage() {
 	imageContainer.src= "images/work" + num + ".jpg";
 	imageContainer.alt="Work Image" + num;
 	title.innerHTML="Work Image " + num;
+
+	console.log("Image ID: " + num);
 }
 
 function prevImage() {
@@ -48,4 +52,14 @@ function prevImage() {
 	imageContainer.src= "images/work" + num + ".jpg";
 	imageContainer.alt="Work Image" + num;
 	title.innerHTML="Work Image " + num;
+
+	console.log("Image ID: " + num);
 }
+
+function changeImage(imgSrc, imgID) {
+	let image = document.getElementById(imgID);
+
+	console.log(image);
+
+	image.src = "images/" + imgSrc + "2.jpg";
+	}

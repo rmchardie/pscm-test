@@ -14,202 +14,114 @@
     <!-- Font Awesome -->
     <link href="css/all.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="images/favico.png">
+    <link rel="shortcut icon" href="images/android-chrome-512x512.png">
 
     <title>About us - PSCM Construction & Interiors Ltd.</title>
   </head>
   <body>
     <!-- Header Area (with responsive navbar) -->
     <header>
-      <div class="social-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <a href="#" class="text-white" style="font-variant: unset; font-size: 12px;" data-toggle="modal" data-target="#loginModal"><i class="fa fa-user" style="margin-right: 5px;"></i> Colleague Login</a>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <img src="images/logo.png" alt="logo" width="32" height="32" style="margin-right: 10px" />
-                    <h5 class="modal-title" id="loginModalTitle">Colleague Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+      <div class="container menu">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand logo-big" href="#"><img src="images/logo.png" alt="PSCM logo"></a>
+            <div class="navbar-nav navbar-brand logo"><a href="#">PSCM</a></div>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link text-primary">home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link active font-weight-bold">about us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    what we do
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="build.html">
+                      <i class="fas fa-tools" style="margin-right: 10px;"></i>build
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-store-alt" style="margin-right: 10px;"></i>fit outs
+                    </a>
                   </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <label for="loginEmail1">Email address</label>
-                        <input type="email" class="form-control" id="loginEmail1" aria-describedby="emailHelp" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="loginPassword1">Password</label>
-                        <input type="password" class="form-control" id="loginPassword1" required>
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Log in</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="btn btn-primary">contact us</a>
+                </li>
+              </ul>
             </div>
-            <div class="col-7 d-flex justify-content-end" style="margin-left: 65px;">
-              <a href="#"><i class="fab fa-facebook-square text-white"></i></a>
-              <a href="#"><i class="fab fa-twitter-square text-white"></i></a>
-              <a href="#"><i class="fab fa-pinterest-square text-white"></i></a>
-              <a href="#"><i class="fab fa-linkedin text-white"></i></a>        
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="PSCM logo"></a>
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item navbar-brand">
-                <a href="index.html" class="nav-link text-primary">home</a>
-              </li>
-              <li class="nav-item navbar-brand">
-                <a href="#" class="nav-link active font-weight-bold">about us</a>
-              </li>
-              <li class="nav-item navbar-brand">
-                <a href="ourwork.html" class="nav-link text-primary">our work</a>
-              </li>
-              <li class="nav-item navbar-brand">
-                <a href="contact.html" class="nav-link text-primary">contact us</a>
-              </li>
-              <li class="nav-item navbar-brand">
-                <button class="nav-link btn btn-primary text-white cta" data-toggle="modal" data-target="#exampleModalCenter">Get a quote</a></button>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <img src="images/logo.png" alt="logo" width="32" height="32" style="margin-right: 10px" />
-              <h5 class="modal-title" id="exampleModalLongTitle">Get a quote</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-              <div class="form-group">
-                  <label for="client-name">Your name</label>
-                  <input type="text" class="form-control" id="client-name">
-                </div>
-                <div class="form-group">
-                  <label for="client-email">Your email address</label>
-                  <input type="email" class="form-control" id="client-email" aria-describedby="emailHelp" required>
-                  <small id="emailHelp" class="form-text">We'll never share your address with anyone else.</small>
-                </div>
-                <div class="form-group">
-                  <label for="client-tel-number">Your contact number</label>
-                  <input type="tel" class="form-control" id="client-tel-number" aria-describedby="telephoneHelp">
-                </div>
-                <div class="form-group">
-                  <label for="client-message">Your message</label>
-                  <textarea rows="5" class="form-control" id="client-message" placeholder="A brief description of the job you require undertaking..."></textarea>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="padding-inline: 20px;">Close</button>
-                <button type="submit" class="btn btn-primary" style="padding-inline: 20px;">Send</button>
-              </form>
-            </div>
-          </div>
-        </div>
+          </nav>
       </div>
     </header>
 
     <main>
+      <!-- Back to top button -->
       <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-primary"><i class="fa fa-chevron-up"></i></button>
-
-        <div class="container">
-          <div class="row py-5">
-            <div class="col-md">
-              <img src="images/scott-blake.jpg" class="img-fluid" alt="Our team" />
-            </div>
-            <div class="col-md">
-              <h2 class="text-primary">About us</h2>
-            <hr />
-            <section>
-              PSCM Construction & Interiors fit out projects in the Restaurant, Hotel Bar, Hospitality and Leisure markets, High Street Retail outlets and
-              Commercial environments throughout the United Kingdom.
-              <p></p>
-              We are based in Cumbernauld, however, we offer national coverage extending from Glasgow, Edinburgh, Stirling, Aberdeen, Inverness
-              and Dundee to Manchester, York, Liverpool, Birmingham, Cardiff and London.
-            </section>
-          </div>
-        </div>
+      <div class="container mt-5 mb-5">
         <div class="row">
           <div class="col-md">
-            <h2 class="text-primary">Our team</h2>
-            <hr />
+            <img src="images/scott-blake.jpg" alt="Image of our team">
           </div>
-        </div>
-        <div class="row py-5">
-            <div class="col-md text-center">
-              <i class="fa fa-user" style="font-size: 200px;"></i>
-            </div>
-            <div class="col-md">
-              <h4 class="text-primary text-fluid" style="margin-bottom:-10px">Anne Example</h4>
-              <small class="text-uppercase">position</small>
-            <section class="py-3">
-              Brief description about colleague, what they do for the company etc.
+          <div class="col-md text-secondary">
+            <h2>About us</h2>
+            <hr>
+            <section>
+              PSCM Construction & Interiors build and fit out projects in the Restaurant, Hotel, Bar, Hospitality and Leisure markets, High Street Retail outlets and
+              Commercial environments throughout Scotland.
+              <p></p>
+              We are based in Cumbernauld, however, we offer national coverage extending to locations including Glasgow, Edinburgh, Stirling, Aberdeen, Inverness, Dundee and Perth.
             </section>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="footer-links">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <img src="images/logo.png">
-            </div>
-            <div class="col-sm-4">
-              <p>Navigation.</p>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="ourwork.html">Our work</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-4 social">
-              <p>Keep Connected.</p>
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-              <a href="#"><i class="fab fa-pinterest-square"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="copyright-info">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4">&copy; PSCM Construction & Interiors Ltd. 2021.</div>
-          <div class="col-sm-4"></div>
+          <!-- Logo -->
+          <div class="col-md">
+            <a href="index.html"><img src="images/logo.png" alt="bottom PSCM logo"></a>
+          </div>
+          <!-- Navigation -->
+          <div class="col-md footer-links">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#" class="active text-secondary">About</a></li>
+              <li>
+                What we do
+                <a href="build.html"><i class="fas fa-tools" style="margin-right: 10px;"></i>Build</a>
+                <a href="fit-out.html"><i class="fas fa-store-alt" style="margin-right: 10px;"></i>Fit outs</a>
+              </li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <!-- Social Media -->
+          <div class="col-md social-links">
+            <h5>Keep Connected</h5>
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link h2 text-primary" href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h2 text-primary" href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h2 text-primary" href="#"><i class="fab fa-pinterest-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h2 text-primary" href="#"><i class="fab fa-linkedin"></i></a>
+              </li>                
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
     <!-- Javascript for back to top scroll button -->
     <script src="js/backToTop.js"></script>
     <!-- JavaScript for Bootstrap components -->
@@ -217,5 +129,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Javascript for services section -->
   </body>
 </html>

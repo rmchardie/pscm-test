@@ -1,32 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  display: block;
+}
+
+.card {
+  padding-block: 10px;
+}
+
+.card a:hover {
+  text-decoration: none;
 }
 
 img {
   max-width: 100%;
 }
 
-.mobile-cta {
-  display: none;
+.hero {
+  background-image: url("../images/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: relative;
 }
 
-.social-header {
-  background-color: #0077ff;
-}
-
-.social-header a {
-  margin-inline: 5px;
-}
-
-@media screen and (max-width: 990px){
-  img {
-    height: 40%;
+@media screen and (max-width: 990px) {
+  .logo-big {
+    display: none;
   }
 
   .cta {
@@ -41,121 +50,58 @@ img {
     margin-bottom: 20px;
   }
 
-  .mobile-cta {
-    display: block;
- 
-  }
-
-  .desktop {
-    display: none;
-  }
-
   .social-header {
     display: none;
   }
+
+  body {
+    margin-top: 50px;
+  }
+
+  .menu {
+    position: fixed;
+    background-color: #fff;
+    margin-top: -50px;
+    z-index: 1000;
+  }
+
+  nav {
+    background-color: #fff;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
 
-a {
- font-variant: small-caps;
-font-size: 20px;
- }
+@media screen and (min-width: 990px) {
+  .logo {
+    display: none;
+  }
+}
 
- hr {
-  background-color:rgba(0, 119, 255, 0.1)
- }
+hr {
+  background-color: rgba(0, 119, 255, 0.1);
+}
 
- section {
+section {
   color: #333;
- }
-
-.what-we-do {
-  opacity: 0;
-  transform: translate(0, 10vh);
-  transition: all 1s;
-}
-
-.what-we-do.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-.hero {
-  padding-bottom: 30px;
-  background-image: url('../images/hero.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  position: relative;
-}
-
-.hero-title h1{ 
-  font-variant: small-caps; 
-  font-size: 2rem; 
-  font-weight: bold;
-  padding:  0;
-  margin: 0;
-}
-
-.hero button, .likeus button, .ourwork button {
-  border-radius: 10px;
-}
-
-.about-us {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.what-we-do {
-  margin-bottom: 30px;
-}
-
-.card:hover {
-  cursor: pointer;
 }
 
 .card-shadow {
   box-shadow: 0px 2px 2px 1px #ccc;
-  }
-
-.likeus {
-  display: block;
-  position: relative;
-  background-color: #0077ff;
-  padding: 20px;
-  font-size: 30px;
 }
 
 .ourwork {
   padding-bottom: 3rem;
-  background-image: url('../images/ourwork.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: block;
   position: relative;
-}
-
-.contact-form {
-  margin-top: 30px;
-}
-
-.footer-links {
-  display: block;
-  position: relative;
-  padding: 20px;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-footer {
-  background-color: #e8e8e8;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-footer a {
-  font-variant: normal;
+  background: rgb(0, 119, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 119, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 ul {
@@ -163,37 +109,8 @@ ul {
 }
 
 li {
-  margin-bottom: 20px;
+  margin-inline: 15px;
 }
-
-footer i {
-  margin-right: 20px;
-  font-size: 36px;
-}
-
-.card img {
-  transition: 0.70s;
-  -webkit-transition: 0.70s;
-  -moz-transition: 0.70s;
-  -ms-transition: 0.70s;
-  -o-transition: 0.70s;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.card img:hover {
-  transition: 0.70s;
-  -webkit-transition: 0.70s;
-  -moz-transition: 0.70s;
-  -ms-transition: 0.70s;
-  -o-transition: 0.70s;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  transform: rotate(-5deg);
-} 
 
 .contact-form i {
   margin-right: 10px;
@@ -213,7 +130,6 @@ html {
   border: none;
   outline: none;
   cursor: pointer;
-  
 }
 
 .gallery a {
@@ -223,4 +139,78 @@ html {
 .gallery a img:hover {
   border-radius: 10px;
   border: solid 2px #0077ff;
+}
+
+img {
+  border-radius: 25px;
+}
+
+.card img {
+  border-radius: 0;
+  margin: 10px;
+}
+
+nav {
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #e8e8e8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-links li {
+  margin-block: 10px;
+  margin-left: 0px;
+}
+
+.social-links li {
+  float: left;
+  margin-left: -15px;
+  margin-right: 15px;
+}
+
+.dropdown-item:hover {
+  font-weight: bold;
+}
+
+.active a {
+  font-weight: bold;
+}
+
+.page-content {
+  position: relative;
+  width: 100%;
+}
+
+/* Style the button and place it in the middle left of the image */
+.page-content .btn-left {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style the button and place it in the middle left of the image */
+.page-content .btn-right {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }

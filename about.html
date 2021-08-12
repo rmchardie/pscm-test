@@ -22,41 +22,54 @@
     <!-- Header Area (with responsive navbar) -->
     <header>
       <div class="container menu">
-          <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand logo-big" href="#"><img src="images/logo.png" alt="PSCM logo"></a>
-            <div class="navbar-nav navbar-brand logo"><a href="#">PSCM</a></div>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a href="index.html" class="nav-link text-primary">home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="about.html" class="nav-link active font-weight-bold">about us</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    what we do
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand logo-big" href="#"><img src="images/logo.png" alt="PSCM logo"></a>
+          <div class="navbar-nav navbar-brand logo"><a href="index.html">PSCM</a></div>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link text-primary">home</a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a href="#" class="nav-link  active font-weight-bold">about us</a>
+              </li>
+              <hr>
+              <li class="nav-item dropdown dd-menu">
+                <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  what we do
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="build.html">
+                    <i class="fas fa-tools" style="margin-right: 10px;"></i>build
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="build.html">
-                      <i class="fas fa-tools" style="margin-right: 10px;"></i>build
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-store-alt" style="margin-right: 10px;"></i>fit outs
-                    </a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a href="contact.html" class="btn btn-primary">contact us</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-      </div>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="fit-out.html">
+                    <i class="fas fa-store-alt" style="margin-right: 10px;"></i>fit outs
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dd-links">
+                <div class="nav-link">what we do</div>
+              </li>
+              
+              <li class="nav-item">
+                <a href="build.html" class="nav-link text-primary dd-links">build</a>
+              </li>
+              <li class="nav-item">
+                <a href="fit-out.html" class="nav-link text-primary dd-links">fit outs</a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link btn btn-primary text-white">contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
     </header>
 
     <main>

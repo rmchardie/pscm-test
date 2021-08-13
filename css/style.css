@@ -100,6 +100,10 @@ img {
   h1 {
     font-size: 1.5rem;
   }
+
+  h5 {
+    font-size: medium;
+  }
 }
 
 @media screen and (min-width: 990px) {
@@ -216,10 +220,6 @@ footer {
   color: #fff;
 }
 
-.active img {
-  cursor: pointer;
-}
-
 .carousel-control-prev-icon {
   width: 40px;
   height: 40px;
@@ -243,4 +243,26 @@ footer {
 
 .social-links {
   display: none;
+}
+
+.imgLink {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered i {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.centered i:hover {
+  opacity: 1;
 }

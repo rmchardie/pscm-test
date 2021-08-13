@@ -23,8 +23,8 @@
     <header>
       <div class="container menu">
         <nav class="navbar navbar-expand-md navbar-light">
-          <a class="navbar-brand logo-big" href="#"><img src="images/logo.png" alt="PSCM logo"></a>
-          <div class="navbar-nav navbar-brand logo"><a href="#">PSCM</a></div>
+          <a class="navbar-brand logo-big" href="index.html"><img src="images/logo.png" alt="PSCM logo"></a>
+          <div class="navbar-nav navbar-brand logo"><a href="index.html">PSCM</a></div>
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -99,19 +99,19 @@
                 <div class="col-sm-6" style="margin-bottom: 30px;">
                   <div class="card">
                     <div class="card-body card-shadow bg-primary text-white">
-                      <form>
+                      <form method="POST" action="mailto:kevin@pscm.uk?subject=PSCM Enquiry">
                 <div class="form-group">
                   <label for="client-name1">Your name</label>
                   <input type="text" class="form-control" id="client-name1">
                 </div>
                 <div class="form-group">
                   <label for="client-email1">Your email address</label>
-                  <input type="email" class="form-control" id="client-email1" aria-describedby="emailHelp" required>
+                  <input type="email" class="form-control" id="client-email1" aria-describedby="emailHelp" name="email" required>
                   <small id="emailHelp" class="form-text">We'll never share your address with anyone else.</small>
                 </div>
                 <div class="form-group">
                   <label for="client-message">Your message</label>
-                  <textarea class="form-control" id="exampleInputPassword1" rows="5"></textarea>
+                  <textarea class="form-control" id="exampleInputPassword1" rows="5" name="message"></textarea>
                 </div>
                 <button type="submit" class="btn btn-light cta font-weight-bold">Get in touch</button>
               </form>
@@ -124,7 +124,7 @@
         <div class="row">
           <!-- Logo -->
           <div class="col-md">
-            <a href="#"><img src="images/logo.png" alt="bottom PSCM logo"></a>
+            <a href="index.html"><img src="images/logo.png" alt="bottom PSCM logo"></a>
           </div>
           <!-- Navigation -->
           <div class="col-md footer-links">

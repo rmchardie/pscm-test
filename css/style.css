@@ -266,3 +266,15 @@ footer {
 .centered i:hover {
   opacity: 1;
 }
+
+.success-icon {
+  border-radius: 50%;
+  border: solid 3px #28a745;
+  padding: 20px;
+}
+
+.error-icon {
+  border-radius: 50%;
+  border: solid 3px #ff0000;
+  padding: 20px;
+}

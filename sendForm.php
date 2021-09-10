@@ -79,48 +79,91 @@
           <div class="container">
             <h2 class="text-secondary">Contact us</h2>
             <hr />
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2232.606451248225!2d-3.971954783726361!3d55.97352178061305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488865928bb9beed%3A0x7124e647ca080261!2s63%20Napier%20Rd%2C%20Cumbernauld%2C%20Glasgow%20G68%200EF!5e0!3m2!1sen!2suk!4v1628197280732!5m2!1sen!2suk" width="1100" style="border:0;" allowfullscreen="" loading="lazy" class="img-fluid"></iframe>
-            <section>
-              <div class="row">
-                <div class="col-sm-6" style="margin-bottom: 30px;">
-                  <div>
-                    <div>
-                      <p>We look forward to working with clients who have an eye for detail and a love of high quality. If you are searching for a team for your next project, we would be delighted to provide you with a quote.</p>
-
-              <p>You can contact us using the details below or by filling out the form on the right:</p>
-              <ul class="location">
-                <li><i class="fa fa-map-marker-alt"></i>63 Napier Road, Wardpark North, Cumbernauld, G68 0EF</li>
-                <li><i class="fa fa-phone" style=" -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);"></i><a href="tel:01236222353" class="btn btn-outline-primary">01236 222 353</a></li>
-                <li><i class="fa fa-envelope"></i><a href="mailto:office@pscm.uk" class="btn btn-outline-primary" style="font-size: 18px;">office@pscm.uk</a></li>
-              </ul>            
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6" style="margin-bottom: 30px;">
-                  <div class="card">
-                    <div class="card-body card-shadow bg-primary text-white">
-                      <form method="POST" action="sendForm.php">
-                        <div class="form-group">
-                          <label for="client-name1">Your name</label>
-                          <input type="text" class="form-control" id="client-name1" name="name">
-                        </div>
-                        <div class="form-group">
-                          <label for="client-email1">Your email address</label>
-                          <input type="email" class="form-control" id="client-email1" aria-describedby="emailHelp" name="email" required>
-                          <small id="emailHelp" class="form-text">We'll never share your address with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="client-message">Your message</label>
-                          <textarea class="form-control" id="exampleInputPassword1" rows="5" name="message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-light cta font-weight-bold">Get in touch</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
+            <?php
+function spamcheck($field)
+  {
+  //filter_var() sanitizes the e-mail 
+  //address using FILTER_SANITIZE_EMAIL
+  $field=filter_var($field, FILTER_SANITIZE_EMAIL);
+  
+  //filter_var() validates the e-mail
+  //address using FILTER_VALIDATE_EMAIL
+  if(filter_var($field, FILTER_VALIDATE_EMAIL))
+    {
+    return TRUE;
+    }
+  else
+    {
+    return FALSE;
+    }
+  }
+if (isset($_REQUEST['email']))
+  {//if "email" is filled out, proceed
+  //check if the email address is invalid
+  $mailcheck = spamcheck($_REQUEST['email']);
+  if ($mailcheck==FALSE)
+    {
+    echo "Invalid input";
+    }
+  else
+    {//send email
+    $name = $_REQUEST['name'] ; 
+    $email = $_REQUEST['email'] ; 
+    $subject = "PSCM Information Request" ;
+    $message = $_REQUEST['message'] ;
+    mail("rmc02@live.com", $subject,
+    $message, "From: $name <$email>");
+    echo "
+    <div class='row mb-3'>
+      <div class='col'></div>
+      <div class='col text-center text-success'>
+        <i class='fa fa-check success-icon'></i>
+      </div>
+      <div class='col'></div>
+    </div>
+    <div class='row mb-3'>
+      <div class='col'></div>
+      <div class='col text-center'>
+        <p>Thank you for your information request.</p>
+        <p>We will contact you within 48 hours.</p>
+      </div>
+      <div class='col'></div>
+    </div>
+    <div class='row mb-3'>
+      <div class='col'></div>
+      <div class='col text-center'>
+        <p class='font-weight-bold'>While you wait, check out our:</p>
+        <a href='build.html' class='btn btn-outline-primary mr-3'>Build Projects</a>
+        <a href='fit-out.html' class='btn btn-outline-primary'>Fit out Projects</a>
+      </div>
+      <div class='col'></div>
+    </div>
+  </div>";
+    }
+  }
+else
+  {//if "email" is not filled out, do not submit
+    echo "
+    <div class='row mb-3'>
+      <div class='col'></div>
+      <div class='col text-center text-error'>
+        <i class='fa fa-check error-icon'></i>
+      </div>
+      <div class='col'></div>
+    </div>
+    <div class='row'>
+      <div class='col'></div>
+      <div class='col text-center'>
+        <p>There was an error with your input.</p>
+        <p>Please resubmit.</p>
+      </div>
+      <div class='col'></div>
+    </div>
+  </div>";
+  }
+?>
     </main>
-    <footer>
+    <footer class="fixed-bottom">
       <div class="container">
         <div class="row">
           <!-- Logo -->

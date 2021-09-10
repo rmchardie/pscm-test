@@ -111,7 +111,7 @@ if (isset($_REQUEST['email']))
     $email = $_REQUEST['email'] ; 
     $subject = "PSCM Information Request" ;
     $message = $_REQUEST['message'] ;
-    mail("rmc02@live.com", $subject,
+    mail("office@pscm.uk", $subject,
     $message, "From: $name <$email>");
     echo "
     <div class='row mb-3'>

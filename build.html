@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Responsive meta tag -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="View our previous build projects for Sterling Home, New build flats in Fort William and Self Catering holiday homes in Letterfinlay."
+      content="View our previous build projects such as Sterling Home, New build flats in Fort William and Self Catering holiday homes in Letterfinlay."
     />
+    <title>Build projects - PSCM Construction & Interiors Ltd.</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -20,110 +18,102 @@
       crossorigin="anonymous"
     />
 
+    <!-- Bootstrap Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
     <!-- Page CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Font Awesome -->
-    <link href="css/all.css" rel="stylesheet" />
-
+    <!-- Favourites Icon -->
     <link rel="shortcut icon" href="images/android-chrome-512x512.png" />
-
-    <title>Build Projects - PSCM Construction & Interiors Ltd.</title>
   </head>
   <body>
     <!-- Header Area (with responsive navbar) -->
     <header>
-      <div class="container menu">
-        <nav class="navbar navbar-expand-md navbar-light">
-          <a class="navbar-brand logo-big" href="index.html"
-            ><img src="images/logo.png" alt="PSCM logo"
-          /></a>
-          <div class="navbar-nav navbar-brand logo">
-            <a href="index.html">PSCM</a>
+      <div class="container mb-5">
+        <nav class="navbar navbar-sm bg-white fixed-bottom">
+          <div class="col">
+            <a href="index.html" class="nav-link">
+              <i class="bi-house-door"></i> <span>Home</span>
+            </a>
           </div>
-          <button
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#navbarMenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link text-primary">home</a>
-              </li>
-              <hr />
-              <li class="nav-item">
-                <a href="about.html" class="nav-link text-primary">about us</a>
-              </li>
-              <hr />
-              <li class="nav-item dropdown dd-menu">
-                <a
-                  class="nav-link dropdown-toggle active font-weight-bold"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  what we do
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item bg-primary text-white" href="#">
-                    <i class="fas fa-tools" style="margin-right: 10px"></i>build
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="fit-out.html">
-                    <i class="fas fa-store-alt" style="margin-right: 10px"></i
-                    >fit outs
-                  </a>
-                </div>
-              </li>
-              <li class="nav-item dd-links">
-                <div class="nav-link">what we do</div>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link active font-weight-bold dd-links"
-                  >build</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="fit-out.html" class="nav-link text-primary dd-links"
-                  >fit outs</a
-                >
-              </li>
-              <hr />
-              <li class="nav-item">
-                <a
-                  href="contact.html"
-                  class="nav-link btn btn-primary text-white"
-                  >contact us</a
-                >
-              </li>
-            </ul>
+          <div class="col">
+            <a href="about.html" class="nav-link">
+              <i class="bi-people"></i> <span>About us</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="nav-link primary bold-text">
+              <i class="bi-bricks"></i> <span>builds</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="fit-out.html" class="nav-link">
+              <i class="bi-shop-window"></i> <span>Fit outs</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="contact.html" class="nav-link">
+              <i class="bi-envelope"></i> <span>Contact us</span>
+            </a>
+          </div>
+        </nav>
+        <nav class="navbar navbar-lg bg-white">
+          <div class="col">
+            <a href="index.html" class="nav-link">
+              <i class="bi-house-door"></i> <span>Home</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="about.html" class="nav-link">
+              <i class="bi-people"></i> <span>About us</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="nav-link primary bold-text">
+              <i class="bi-bricks"></i> <span>builds</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="fit-out.html" class="nav-link">
+              <i class="bi-shop"></i> <span>Fit outs</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="contact.html" class="nav-link">
+              <i class="bi-envelope"></i> <span>Contact us</span>
+            </a>
           </div>
         </nav>
       </div>
     </header>
 
     <main>
+      <!-- Start of Back to top button -->
       <button
         onclick="topFunction()"
         id="myBtn"
         title="Go to top"
-        class="btn btn-primary"
+        class="text-primary"
       >
-        <i class="fa fa-chevron-up"></i>
+        <i class="bi-arrow-up-circle"></i>
       </button>
+      <!-- End of Back to top button -->
       <div class="container">
-        <div class="row mt-5 mb-3">
+        <div class="row">
+          <div class="col-sm">
+            <img src="images/logo.png" />
+            <hr />
+          </div>
+        </div>
+        <div class="row mb-3">
           <div class="col-md">
-            <h1 class="text-secondary">Builds</h1>
+            <h1 class="text-secondary">Build Projects</h1>
             <h5 class="alert alert-primary text-center" role="alert">
-              <i class="fa fa-search-plus"></i>
+              <i class="bi-zoom-in"></i>
               Click / tap on an image to load it's gallery.
             </h5>
           </div>
@@ -132,8 +122,8 @@
           <div class="col-sm-6 order-sm-12">
             <h2 class="text-secondary">Sterling Home</h2>
             <h5>
-              <i class="fas fa-map-marker-alt" style="margin-right: 10px"></i
-              >London Road, Glasgow
+              <i class="bi-pin-map" style="margin-right: 10px"></i>London Road,
+              Glasgow
             </h5>
             <hr />
             <p>
@@ -148,7 +138,7 @@
             />
             <div class="centered h1">
               <i
-                class="fa fa-search-plus"
+                class="bi-zoom-in"
                 data-toggle="modal"
                 data-target="#sterlingModal"
               ></i>
@@ -159,8 +149,7 @@
           <div class="col-md">
             <h2 class="text-secondary">New build flats</h2>
             <h5>
-              <i class="fas fa-map-marker-alt" style="margin-right: 10px"></i
-              >Fort William
+              <i class="bi-pin-map" style="margin-right: 10px"></i>Fort William
             </h5>
             <hr />
             <p>
@@ -170,12 +159,12 @@
           </div>
           <div class="col-md text-center imgLink">
             <img
-              src="images/fort-william1.jpg"
+              src="images/fort-william-main.jpg"
               alt="Fort William flats construction"
             />
             <div class="centered h1">
               <i
-                class="fa fa-search-plus"
+                class="bi-zoom-in"
                 data-toggle="modal"
                 data-target="#flatsModal"
               ></i>
@@ -186,24 +175,23 @@
           <div class="col-sm-6 order-sm-12">
             <h2 class="text-secondary">Self catering holiday homes</h2>
             <h5>
-              <i class="fas fa-map-marker-alt" style="margin-right: 10px"></i
-              >Letterfinlay
+              <i class="bi-pin-map" style="margin-right: 10px"></i>Letterfinlay
             </h5>
             <hr />
             <p>
-              PSCM were the principle contractor for the construction and fit
-              out of six number new, larch clad holiday homes consisting of a
-              mix of 2 and 3 bedroom luxury properties.
+              PSCM were the principle contractor for the construction of six
+              number new, larch clad holiday homes consisting of a mix of 2 and
+              3 bedroom luxury properties.
             </p>
           </div>
           <div class="col-sm-6 order-sm-1 imgLink">
             <img
-              src="images/letterfinlay1.jpg"
+              src="images/letterfinlay-main.jpg"
               alt="self catering holiday homes - letterfinlay"
             />
             <div class="centered h1">
               <i
-                class="fa fa-search-plus"
+                class="bi-zoom-in"
                 data-toggle="modal"
                 data-target="#homesModal"
               ></i>
@@ -212,62 +200,58 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <!-- Logo -->
-          <div class="col-md">
-            <a href="index.html"
-              ><img src="images/logo.png" alt="bottom PSCM logo"
-            /></a>
-          </div>
-          <!-- Navigation -->
-          <div class="col-md footer-links">
-            <h5>Navigation</h5>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                What we do
-                <a href="#" class="active text-secondary"
-                  ><i class="fas fa-tools" style="margin-right: 10px"></i
-                  >Build</a
-                >
-                <a href="fit-out.html"
-                  ><i class="fas fa-store-alt" style="margin-right: 10px"></i
-                  >Fit out interiors</a
-                >
-              </li>
-              <li><a href="contact.html">Contact us</a></li>
-            </ul>
-          </div>
-          <!-- Social Media -->
-          <div class="col-md social-links">
-            <h5>Keep Connected</h5>
-            <ul>
-              <li class="nav-item">
-                <a class="nav-link h2 text-primary" href="#"
-                  ><i class="fab fa-facebook-square"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link h2 text-primary" href="#"
-                  ><i class="fab fa-twitter-square"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link h2 text-primary" href="#"
-                  ><i class="fab fa-pinterest-square"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link h2 text-primary" href="#"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <footer class="mt-5">
+      <div class="container text-center">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" class="text-secondary"
+                ><i
+                  class="bi-house-door"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-secondary"
+                ><i
+                  class="bi-people"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="build.html"
+                ><i
+                  class="bi-bricks"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i
+                >Builds</a
+              >
+            </li>
+            <li>
+              <a href="fit-out.html" class="text-secondary"
+                ><i
+                  class="bi-shop"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i
+                >Fit outs</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="text-secondary"
+                ><i
+                  class="bi-envelope"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="text-right">&copy;PSCM. 2020.</p>
       </div>
     </footer>
     <!-- Sterling Modal -->
@@ -285,8 +269,8 @@
             <div class="modal-title" id="sterlingModalLongTitle">
               <h4>Sterling Home</h4>
               <h6>
-                <i class="fas fa-map-marker-alt" style="margin-right: 10px"></i
-                >London Road, Glasgow
+                <i class="bi-pin-map" style="margin-right: 10px"></i>London
+                Road, Glasgow
               </h6>
             </div>
             <button
@@ -376,8 +360,8 @@
             <div class="modal-title" id="flatsModalLongTitle">
               <h4>New build flats</h4>
               <h6>
-                <i class="fas fa-map-marker-alt" style="margin-right: 10px"></i
-                >Fort William
+                <i class="bi-pin-map" style="margin-right: 10px"></i>Fort
+                William
               </h6>
             </div>
             <button
@@ -399,6 +383,20 @@
                 <div class="carousel-item active">
                   <img
                     class="d-block w-100"
+                    src="images/fort-william-main.jpg"
+                    alt="Image of new build flats in Fort William"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="images/fort-william3.jpg"
+                    alt="Image of new build flats in Fort William"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
                     src="images/fort-william1.jpg"
                     alt="Image of new build flats in Fort William"
                   />
@@ -407,13 +405,6 @@
                   <img
                     class="d-block w-100"
                     src="images/fort-william2.jpg"
-                    alt="Image of new build flats in Fort William"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/fort-william3.jpg"
                     alt="Image of new build flats in Fort William"
                   />
                 </div>
@@ -467,7 +458,7 @@
             <div class="modal-title" id="homesModalLongTitle">
               <h4>Self catering holiday homes</h4>
               <h6>
-                <i class="fas fa-map-marker-alt" style="margin-right: 10px"></i
+                <i class="bi-pin-map" style="margin-right: 10px"></i
                 >Letterfinlay
               </h6>
             </div>
@@ -488,6 +479,13 @@
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="images/letterfinlay-main.jpg"
+                    alt="Image of self catering holiday homes in Letterfinlay"
+                  />
+                </div>
+                <div class="carousel-item">
                   <img
                     class="d-block w-100"
                     src="images/letterfinlay1.jpg"

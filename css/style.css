@@ -51,24 +51,15 @@ iframe {
   font-size: 12px;
 }
 
-.nav-link:hover {
-  background-color: #fff;
-  border: 1px solid #e6e6f2;
-  color: #0077ff;
-  font-weight: bold;
-}
-
-.nav-link span {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.col .nav-link {
+  margin-left: -9px;
+  margin-right: -9px;
 }
 
 .primary {
   color: #0077ff;
   font-variant: small-caps;
-  font-size: 1em;
+  font-size: large;
 }
 
 .title {

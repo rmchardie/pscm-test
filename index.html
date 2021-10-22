@@ -245,7 +245,7 @@
               class="col-sm-6"
               style="border: solid 1px #086b9c; border-radius: 0.25rem"
             >
-              <form action="https://www.pscm.uk/sendForm.php" method="post">
+              <form action="sendMail.php" method="post" id="contactForm">
                 <div class="form-group mt-3">
                   <label for="name">Your name:</label>
                   <input
@@ -254,7 +254,6 @@
                     id="name"
                     name="name"
                     minlength="2"
-                    value=""
                   />
                 </div>
                 <div class="form-group">
@@ -268,13 +267,18 @@
                   />
                   <small>
                     <strong class="text-success font-weight-bold" id="validEmail" hidden>
-                      <i class="bi-shield-check"></i>Valid email address!
+                      <div class="alert alert-success" role="alert">
+                        <i class="bi-shield-check"></i>Valid email address!
+                      </div>
                       </strong>
                   </small>
                   <small>
                     <strong class="text-danger font-weight-bold" id="invalidEmail" hidden
                       >
-                      <i class="bi-shield-x"></i>Invalid email address!
+                      <div class="alert alert-danger" role="alert">
+                        <i class="bi-shield-x"></i>Invalid email address!
+                      </div>
+                      
                       </strong
                     >
                   </small>
@@ -283,7 +287,7 @@
                   >
                 </div>
                 <div class="form-group">
-                  <label for="email">Your contact number:</label>
+                  <label for="telNo">Your contact number:</label>
                   <input
                     type="number"
                     class="form-control"
@@ -297,17 +301,27 @@
                   <textarea
                     class="form-control"
                     id="telNo"
-                    name="telNo"
+                    name="message"
                     rows="5"
                   ></textarea>
                 </div>
                 <div class="form-group form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" /> I'm not a
+                    <input type="checkbox" class="form-check-input" id="notRobot" name="notRobot" /> I'm not a
                     robot!
                   </label>
+                  <small>
+                    <strong class="text-danger font-weight-bold" id="spamFilter" hidden
+                      >
+                      <div class="alert alert-danger" role="alert">
+                        <i class="bi-shield-x"></i>Please complete the required fields!
+                      </div>
+                      
+                      </strong
+                    >
+                  </small>
                 </div>
-                <button type="submit" class="btn btn-primary mb-3">
+                <button type="submit" class="btn btn-primary mb-3" id="formSubmit">
                   send message
                 </button>
               </form>

@@ -214,7 +214,7 @@ $mail = new PHPMailer(TRUE);
 try {
    
    $mail->setFrom('pscm-web-form@outlook.com', 'PSCM Contact Form');
-   $mail->addAddress('ross.mchardie@gmail.com', $name);
+   $mail->addAddress('office@pscm.uk', 'PSCM Construction & Interiors Ltd');
    $mail->Subject = 'PSCM Contact Form submission';
    $mail->IsHTML(true);
     $mail->Body = $body;

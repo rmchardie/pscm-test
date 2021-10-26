@@ -1,0 +1,13 @@
+{
+    "name": "PSCM Construction & Interiors Ltd",
+    "short_name": "PSCM",
+    "description": "Based in Cumbernauld, we specialise in build and fit out projects across Scotland in Retail, Hospitality, Bar and Commercial environments.Learn how to create and share something or other.",
+    "start_url": "/index.html",
+    "background_color": "#fff",
+    "theme_color": "#086B9C",
+    "icons": [{
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+  }

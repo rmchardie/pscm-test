@@ -100,16 +100,16 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 /* Exception class. */
-require 'PHPMailer\src\Exception.php';
+require 'path/to/PHPMailer/src/Exception.php';
 
 /* The main PHPMailer class. */
-require 'PHPMailer\src\PHPMailer.php';
+require 'path/to/PHPMailer/src/PHPMailer.php';
 
 /* SMTP class, needed if you want to use SMTP. */
-require 'PHPMailer\src\SMTP.php';
+require 'path/to/PHPMailer/src/SMTP.php';
 
 // Form Authentication
-require 'PHPMailer\src\FormAuth.php';
+require 'path/to/PHPMailer/src/FormAuth.php';
 
 function spamcheck($field)
   {

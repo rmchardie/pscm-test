@@ -194,7 +194,7 @@ $success = "
   $email = new SendGrid\Mail\Mail; 
   $email->setFrom("pscm-web-form@outlook.com", "PSCM Contact Form");
   $email->setSubject("New Contact Form submission");
-  $email->addTo("ross.mchardie@gmail.com", "Ross McHardie");
+  $email->addTo("office@pscm.uk", "PSCM Construction & Interiors Ltd");
   $email->addContent("text/plain", strip_tags($body));
   $email->addContent("text/html", $body);
   $sendgrid = new SendGrid($apiKey);

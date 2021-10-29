@@ -8,7 +8,7 @@
       name="description"
       content="Call us, email us or fill out the form to contact us!"
     />
-    <title>Contact us - PSCM Construction & Interiors Ltd.</title>
+    <title>Contact Form submission - PSCM Construction & Interiors Ltd.</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -94,24 +94,12 @@
         <!-- Start of Back to top button -->
         <button onclick="topFunction()" id="myBtn" title="Go to top" class="text-primary"><i class="bi-arrow-up-circle"></i></button>
         <!-- End of Back to top button -->
-        <?php
+<?php
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+  require("sendgrid-php/sendgrid-php.php");
+  require("sendgrid-php/sendgrid-env.php");
 
-/* Exception class. */
-require 'path/to/PHPMailer/src/Exception.php';
-
-/* The main PHPMailer class. */
-require 'path/to/PHPMailer/src/PHPMailer.php';
-
-/* SMTP class, needed if you want to use SMTP. */
-require 'path/to/PHPMailer/src/SMTP.php';
-
-// Form Authentication
-require 'path/to/PHPMailer/src/FormAuth.php';
-
-function spamcheck($field)
+  function spamcheck($field)
   {
   //filter_var() sanitizes the e-mail 
   //address using FILTER_SANITIZE_EMAIL
@@ -142,7 +130,24 @@ if (isset($_REQUEST['email']))
     $email = strip_tags($_REQUEST['email']) ;
     $telNo = strip_tags($_REQUEST['telNo']) ;
     $message = strip_tags($_REQUEST['message']) ;
-    $success = "
+  $body = "<p><img src='https://www.pscm.uk/images/logo.png' alt='PSCM Logo'></p>
+  <p>You have received a new contact form submission from <strong>$name</strong></p>
+  <p>You can contact them on:</p>
+  <table style='border: 1px solid #0077ff;'>
+  <tr style='border: 1px solid #0077ff;'>
+    <th style='background-color: #0077ff; color: #fff;'>Name</th>
+    <th style='background-color: #0077ff; color: #fff;'>Email</th>
+    <th style='background-color: #0077ff; color: #fff;'>Phone</th>
+  </tr>
+  <tr style='border: 1px solid #0077ff;'>
+    <td>$name</td>
+    <td>$email</td>
+    <td>$telNo</td>
+  </tr>
+</table>
+<div><p>Message:</p><p style='border: 1px solid #0077ff;'>$message</p></div>
+<div><p><small>This message was sent from <a href='https://www.pscm.uk'>https://www.pscm.uk</a></small></p></div>";
+$success = "
     <div class='row mb-3'>
       <div class='col'></div>
       <div class='col text-center text-success'>
@@ -153,8 +158,8 @@ if (isset($_REQUEST['email']))
     <div class='row mb-3'>
       <div class='col'></div>
       <div class='col text-center'>
-        <p>Thank you for your information request.</p>
-        <p>We will contact you within 48 hours.</p>
+        <p>Thank you for your contacting us.</p>
+        <p>Our aim is to reply within 48 hours.</p>
       </div>
       <div class='col'></div>
     </div>
@@ -171,7 +176,7 @@ if (isset($_REQUEST['email']))
   $error = "
     <div class='row mb-3'>
       <div class='col'></div>
-      <div class='col text-center text-error'>
+      <div class='col text-center text-danger'>
         <i class='bi-x-circle'></i>
       </div>
       <div class='col'></div>
@@ -179,88 +184,30 @@ if (isset($_REQUEST['email']))
     <div class='row'>
       <div class='col'></div>
       <div class='col text-center'>
-        <p>There was an error with your input.</p>
-        <p>Please resubmit.</p>
+        <p>There was an error sending your message.</p>
+        <p>Please try again later.</p>
       </div>
       <div class='col'></div>
     </div>
   </div>";
-  $body = "
-  <div style='display: grid; place-items: center; gap: 1em; font-family: Inter; font-size: 20px; color: #555 width: 100vw;'>
-  <div>
-      <img src='https://www.pscm.uk/images/logo.png' alt='PSCM Logo'>
-  </div>
-  <div>
-      <h1>New Contact Form submission!</h1>
-      <hr style='opacity: 0.4;'>
-  </div>
-  <div style='margin-bottom: 20px;'>
-      <strong>$name</strong> has sent the following message:
-  </div>
-  <div style='background-color: #ccc; padding: 50px 150px; border-radius: 25px; margin-bottom: 20px; text-align: left;'>
-      $message
-  </div>
-  <div style='margin-bottom: 20px;'>
-      Reply to: <strong>$email</strong>
-      <p>or phone: <strong>$telNo</strong></p>
-  </div>
-  <div>
-      <small>This message was sent from <a href='https://www.pscm.uk'>https://www.pscm.uk</a></small>
-  </div>
-</div>";
-
-$mail = new PHPMailer(TRUE);
-
-try {
-   
-   $mail->setFrom('pscm-web-form@outlook.com', 'PSCM Contact Form');
-   $mail->addAddress('office@pscm.uk', 'PSCM Construction & Interiors Ltd');
-   $mail->Subject = 'PSCM Contact Form submission';
-   $mail->IsHTML(true);
-    $mail->Body = $body;
-    $mail->AltBody= strip_tags($body);
-   
-   /* SMTP parameters. */
-   $mail->isSMTP();
-   $mail->Host = 'smtp.outlook.com';
-   $mail->SMTPAuth = TRUE;
-   $mail->SMTPSecure = 'tls';
-   $mail->Username = $formAuth01;
-   $mail->Password = $formAuth02;
-   $mail->Port = 587;
-   
-   /* Disable some SSL checks. */
-   $mail->SMTPOptions = array(
-      'ssl' => array(
-      'verify_peer' => false,
-      'verify_peer_name' => false,
-      'allow_self_signed' => true
-      )
-   );
-   
-   /* Finally send the mail. */
-   if ($mail->send()) {
-       echo $success;
-   } else {
-       echo $error;
-   }
+    
+  $email = new SendGrid\Mail\Mail; 
+  $email->setFrom("pscm-web-form@outlook.com", "PSCM Contact Form");
+  $email->setSubject("New Contact Form submission");
+  $email->addTo("ross.mchardie@gmail.com", "Ross McHardie");
+  $email->addContent("text/plain", strip_tags($body));
+  $email->addContent("text/html", $body);
+  $sendgrid = new SendGrid($apiKey);
+  try {
+      $response = $sendgrid->send($email);
+      echo $success;
+      // print $response->statusCode() . "\n";
+      // print_r($response->headers());
+      // print $response->body() . "\n";
+  } catch (Exception $e) {
+      // echo 'Caught exception: '. $e->getMessage() ."\n";
+      echo $error . "\n" . $e . "\n";
+  }
 }
-catch (Exception $e)
-{
-   echo $e->errorMessage();
-}
-catch (\Exception $e)
-{
-   echo $e->getMessage();
-}
-    }
-}
+  }
 ?>
-</main>
-    <footer class="mt-5">
-      <div class="container text-center">
-        <p>&copy;PSCM. 2020.</p>
-      </div>
-    </footer>
-</body>
-</html>

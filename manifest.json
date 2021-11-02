@@ -1,13 +1,48 @@
 {
-    "name": "PSCM Construction & Interiors Ltd",
+    "theme_color": "#1170a0",
+    "background_color": "#1170a0",
+    "display": "browser",
+    "start_url": "/index.html",
+    "name": "PSCM Construction & Interiors",
     "short_name": "PSCM",
     "description": "Based in Cumbernauld, we specialise in build and fit out projects across Scotland in Retail, Hospitality, Bar and Commercial environments.Learn how to create and share something or other.",
-    "start_url": "/index.html",
-    "background_color": "#fff",
-    "theme_color": "#086B9C",
-    "icons": [{
-      "src": "android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }]
+    "icons": [
+        {
+            "src": "images/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "shortcuts" : [
+      {
+        "name": "Builds",
+        "url": "/build.html",
+        "description": "View our build projects"
+      },
+      {
+        "name": "Fit outs",
+        "url": "/fit-out.html",
+        "description": "View our fit out projects"
+      },
+      {
+        "name": "Contact us",
+        "url": "/contact.html",
+        "description": "Send us a message"
+      }
+    ]
   }

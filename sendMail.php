@@ -29,6 +29,17 @@
 
     <!-- Favourites Icon -->
     <link rel="shortcut icon" href="images/android-chrome-512x512.png" />
+    <style>
+      body {
+        overflow: hidden;
+      }
+
+      footer {
+        position: absolute;
+        width: 100vw;
+        bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <body>
@@ -116,8 +127,8 @@
     return FALSE;
     }
   }
-if (isset($_REQUEST['email']))
-  {//if "email" is filled out, proceed
+if (isset($_REQUEST['email']) && empty($_REQUEST['custId']))
+  {//if "email" is filled out and honeypot is not 'full', proceed
   //check if the email address is invalid
   $mailcheck = spamcheck($_REQUEST['email']);
   if ($mailcheck==FALSE)
@@ -135,12 +146,10 @@ if (isset($_REQUEST['email']))
   <p>You can contact them on:</p>
   <table style='border: 1px solid #0077ff;'>
   <tr style='border: 1px solid #0077ff;'>
-    <th style='background-color: #0077ff; color: #fff;'>Name</th>
     <th style='background-color: #0077ff; color: #fff;'>Email</th>
     <th style='background-color: #0077ff; color: #fff;'>Phone</th>
   </tr>
   <tr style='border: 1px solid #0077ff;'>
-    <td>$name</td>
     <td>$email</td>
     <td>$telNo</td>
   </tr>
@@ -148,13 +157,18 @@ if (isset($_REQUEST['email']))
 <div><p>Message:</p><p style='border: 1px solid #0077ff;'>$message</p></div>
 <div><p><small>This message was sent from <a href='https://www.pscm.uk'>https://www.pscm.uk</a></small></p></div>";
 $success = "
-    <div class='row mb-3'>
-      <div class='col'></div>
-      <div class='col text-center text-success'>
-        <i class='bi-check-circle'></i>
-      </div>
-      <div class='col'></div>
+  <div class='row mb-3'>
+    <div class='col text-center'>
+      <img src='images/logo.png' alt='PSCM Logo' />
     </div>
+  </div>
+  <div class='row mb-3'>
+    <div class='col'></div>
+    <div class='col text-center text-success'>
+      <i class='bi-check-circle'></i>
+    </div>
+    <div class='col'></div>
+  </div>
     <div class='row mb-3'>
       <div class='col'></div>
       <div class='col text-center'>
@@ -171,8 +185,7 @@ $success = "
         <a href='fit-out.html' class='btn btn-outline-primary'>Fit out Projects</a>
       </div>
       <div class='col'></div>
-    </div>
-  </div>";
+    </div>";
   $error = "
     <div class='row mb-3'>
       <div class='col'></div>
@@ -209,5 +222,64 @@ $success = "
       echo $error . "\n" . $e . "\n";
   }
 }
+  } else {
+    echo "<p class='text-danger font-weight-bold'>SPAM DETECTED! EMAIL NOT SENT</p>";
   }
 ?>
+</main>
+<footer class="mt-5">
+      <div class="container text-center">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" class="text-secondary"
+                ><i
+                  class="bi-house-door"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-secondary"
+                ><i
+                  class="bi-people"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="build.html" class="text-secondary"
+                ><i
+                  class="bi-bricks"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i
+                >Builds</a
+              >
+            </li>
+            <li>
+              <a href="fit-out.html" class="text-secondary"
+                ><i
+                  class="bi-shop"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i
+                >Fit outs</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="bi-envelope"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="text-right">&copy;PSCM. 2020.</p>
+      </div>
+    </footer>
+  </body>
+</html>

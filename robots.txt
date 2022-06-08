@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /node_modules/
+Disallow: /recaptcha/
+Disallow: /js/
+Disallow: /vendor/
+Disallow: /*.php
+Disallow: /*.json
+Disallow: /*.lock
+Sitemap: https://www.pscm.uk/sitemap.xml

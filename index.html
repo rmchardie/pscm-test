@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Based in Cumbernauld, we specialise in build and fit out projects across Scotland in Retail, Hospitality, Bar and Commercial environments.">
+    <meta
+      name="description"
+      content="Based in Cumbernauld, we specialise in build and fit out projects across Scotland in Retail, Hospitality, Bar and Commercial environments."
+    />
+    <meta name="robots" content="index, follow" />
     <title>PSCM Construction & Interiors Ltd.</title>
 
     <!-- Bootstrap CSS -->
@@ -18,7 +22,7 @@
     <!-- Bootstrap Icons CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
     />
 
     <!-- Page CSS -->
@@ -29,12 +33,30 @@
 
     <!-- Site Manifest -->
     <link rel="manifest" href="manifest.json" />
+
+    <!-- Preferred URL -->
+    <link rel="canonical" href="https://www.pscm.uk/" />
   </head>
-  <body>
+  <body id="body">
+    <div
+      class="alert alert-success alert-dismissible fade fixed-top"
+      role="alert"
+      id="#removeConsent"
+      style="display: none"
+    >
+      <div class="container d-flex justify-content-center align-items-center">
+        <i
+          class="bi-shield-check"
+          style="margin-right: 8px; vertical-align: middle"
+        >
+        </i>
+        Cookie consent <strong class="ml-1"> removed!</strong>
+      </div>
+    </div>
     <header>
-      <div class="container mb-5">
+      <div class="container mb-3">
         <nav class="navbar navbar-sm bg-white fixed-bottom">
-          <div class="col">
+          <div class="col border-bottom border-primary">
             <a href="#" class="nav-link primary bold-text">
               <i class="bi-house-door"></i>
             </a>
@@ -90,17 +112,89 @@
       </div>
       <div class="container">
         <div class="hero text-center">
-          <img src="images/hero-new.png" alt="Image of the construction & interior services we offer" />
+          <img
+            src="images/hero-new.png"
+            alt="Image of the construction & interior services we offer"
+          />
         </div>
       </div>
     </header>
     <main>
+      <div
+        id="myModal"
+        class="modal fade d-flex align-items-center justify-content-center"
+        data-backdrop="static"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">
+                <img
+                  src="images/cookie.png"
+                  alt=""
+                  width="32"
+                  height="32"
+                  style="margin-right: 10px"
+                />
+                <strong>We use cookies...</strong>
+              </h5>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Some pages on this website use third-party cookies to
+                authenticate user inputted data to protect from spam and bots
+                and also to display location maps to help you find our office.
+              </p>
+
+              <p>
+                We also store a cookie to record your confirmation of consent of
+                this notice.
+              </p>
+
+              <p>
+                For more information, you can read our
+                <a href="privacy.html">Privacy Policy</a>.
+              </p>
+
+              <p>
+                By clicking accept, or closing this notice without declining,
+                you are agreeing with this policy.
+              </p>
+              <div>
+                <a class="btn btn-outline-primary mr-4" id="accept-btn"
+                  >Accept</a
+                >
+                <a
+                  class="btn btn-outline-primary"
+                  id="decline-btn"
+                  data-dismiss="modal"
+                >
+                  Decline
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal-backdrop fade show"
+        id="backdrop"
+        style="display: none"
+      ></div>
       <!-- Start of Back to top button -->
-      <button onclick="topFunction()" id="myBtn" title="Go to top" class="text-primary"><i class="bi-arrow-up-circle"></i></button>
+      <button id="myBtn" title="Go to top" class="text-primary">
+        <i class="bi-arrow-up-circle"></i>
+      </button>
       <!-- End of Back to top button -->
       <div class="container mt-5 mb-5">
         <div class="row">
           <div class="col-md">
+            <h1 class="text-secondary">
+              Welcome to PSCM Construction & Interiors Ltd.
+            </h1>
             <p>
               PSCM Construction & Interiors build and fit out projects in the
               Restaurant, Hotel, Bar, Hospitality and Leisure markets, High
@@ -132,9 +226,7 @@
             <div class="col-md mb-3">
               <div class="card card-shadow">
                 <div class="card-header">
-                  <h5 class="card-title">
-                    Beautiful new mansion
-                  </h5>
+                  <h5 class="card-title">Beautiful new mansion</h5>
                 </div>
                 <img
                   src="images/halcyon-manor-home.jpg"
@@ -216,26 +308,38 @@
       </div>
       <div class="contact-form mb-5">
         <div class="container text-center">
-          <h2 class="title bold-text">How can we help?</h2>
+          <h2 class="title bold-text" id="how-to-contact-us">
+            How can we help?
+          </h2>
           <section>
-            <div class="row contact-details">
+            <div class="row contact-details mb-3">
               <div class="col-sm">
-                <i class="bi-pin-map"></i>
-                  63 Napier Road, Wardpark North, Cumbernauld, G68 0EF
+                <i
+                  class="bi-pin-map"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i>
+                63 Napier Road, Wardpark North, Cumbernauld, G68 0EF
               </div>
               <div class="col-sm">
-                <i class="bi-phone-vibrate"></i>
-                  01236 222 353
+                <i
+                  class="bi-phone-vibrate"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i>
+                01236 222 353
               </div>
               <div class="col-sm">
-                <i class="bi-envelope"></i>
-                office@pscm.uk
+                <i
+                  class="bi-envelope"
+                  style="margin-right: 8px; vertical-align: middle"
+                ></i>
+                <a href="mailto:office@pscm.uk?subject=New Form Submission"
+                  >E-mail us</a
+                >
               </div>
             </div>
-          </div>
           </section>
         </div>
-        <div class="container mb-5">
+        <div class="container mb-5" id="contact-form">
           <div class="row">
             <div class="col-md text-center contact-us-image">
               <img
@@ -248,7 +352,7 @@
               class="col-sm-6"
               style="border: solid 1px #086b9c; border-radius: 0.25rem"
             >
-              <form action="sendMail.php" method="post" id="contactForm">
+              <form action="processForm.php" method="post" id="contactForm">
                 <div class="form-group mt-3">
                   <label for="name">Your name:</label>
                   <input
@@ -269,24 +373,29 @@
                     onkeyup="ValidateEmail(this)"
                   />
                   <small>
-                    <input type="hidden" id="custId" name="custId" value="">
+                    <input type="hidden" id="custId" name="custId" value="" />
                   </small>
                   <small>
-                    <strong class="text-success font-weight-bold" id="validEmail" hidden>
+                    <strong
+                      class="text-success font-weight-bold"
+                      id="validEmail"
+                      hidden
+                    >
                       <div class="alert alert-success" role="alert">
                         <i class="bi-shield-check"></i>Valid email address!
                       </div>
-                      </strong>
+                    </strong>
                   </small>
                   <small>
-                    <strong class="text-danger font-weight-bold" id="invalidEmail" hidden
-                      >
+                    <strong
+                      class="text-danger font-weight-bold"
+                      id="invalidEmail"
+                      hidden
+                    >
                       <div class="alert alert-danger" role="alert">
                         <i class="bi-shield-x"></i>Invalid email address!
                       </div>
-                      
-                      </strong
-                    >
+                    </strong>
                   </small>
                   <small id="spamMessage"
                     >We will only use your email to contact you directly.</small
@@ -306,28 +415,49 @@
                   <label for="message">Your message:</label>
                   <textarea
                     class="form-control"
-                    id="telNo"
+                    id="message"
                     name="message"
                     rows="5"
                   ></textarea>
                 </div>
-                <div class="form-group form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" id="notRobot" name="notRobot" /> I'm not a
-                    robot!
-                  </label>
+                <div class="form-group">
+                  <div class="g-recaptcha" id="recaptcha" data-sitekey=""></div>
                   <small>
-                    <strong class="text-danger font-weight-bold" id="spamFilter" hidden
-                      >
-                      <div class="alert alert-danger" role="alert">
-                        <i class="bi-shield-x"></i>Please complete the required fields!
-                      </div>
-                      
-                      </strong
+                    <strong
+                      class="text-danger font-weight-bold"
+                      id="spamFilter"
+                      hidden
                     >
+                      <div
+                        class="alert alert-danger recaptchaCheck"
+                        role="alert"
+                        hidden
+                      >
+                        <i class="bi-shield-x"></i>
+                        Please complete the reCAPTCHA!
+                      </div>
+                      <div
+                        class="alert alert-danger invalidInput"
+                        role="alert"
+                        hidden
+                      >
+                        <i class="bi-shield-x"></i>
+                        Please complete the required fields!
+                      </div>
+                    </strong>
                   </small>
                 </div>
-                <button type="submit" class="btn btn-primary mb-3" id="formSubmit">
+                <div class="form-group">
+                  <small
+                    >By submitting this form you are agreeing to our
+                    <a href="privacy.html">Privacy Policy.</a></small
+                  >
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary mb-3"
+                  id="formSubmit"
+                >
                   send message
                 </button>
               </form>
@@ -337,60 +467,91 @@
       </div>
     </main>
     <footer class="mt-5">
-      <div class="container text-center">
-        <nav>
-          <ul>
-            <li>
-              <a href="#"
-                ><i
-                  class="bi-house-door"
-                  style="margin-right: 8px; vertical-align: middle"
-                ></i
-                >Home</a
-              >
-            </li>
-            <li>
-              <a href="about.html" class="text-secondary"
-                ><i
-                  class="bi-people"
-                  style="margin-right: 8px; vertical-align: middle"
-                ></i
-                >About us</a
-              >
-            </li>
-            <li>
-              <a href="build.html" class="text-secondary"
-                ><i
-                  class="bi-bricks"
-                  style="margin-right: 8px; vertical-align: middle"
-                ></i
-                >Builds</a
-              >
-            </li>
-            <li>
-              <a href="fit-out.html" class="text-secondary"
-                ><i
-                  class="bi-shop"
-                  style="margin-right: 8px; vertical-align: middle"
-                ></i
-                >Fit outs</a
-              >
-            </li>
-            <li>
-              <a href="contact.html" class="text-secondary"
-                ><i
-                  class="bi-envelope"
-                  style="margin-right: 8px; vertical-align: middle"
-                ></i
-                >Contact us</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <p class="text-right">&copy;PSCM. 2020.</p>
+      <div
+        class="container text-center d-flex justify-content-between align-items-center"
+      >
+        <div>
+          <a href="#">
+            <i
+              class="bi-house-door"
+              style="margin-right: 8px; vertical-align: middle"
+            ></i>
+            Home
+          </a>
+        </div>
+        <div>
+          <a href="about.html" class="text-secondary">
+            <i
+              class="bi-people"
+              style="margin-right: 8px; vertical-align: middle"
+            ></i>
+            About us
+          </a>
+        </div>
+        <div>
+          <a href="build.html" class="text-secondary">
+            <i
+              class="bi-bricks"
+              style="margin-right: 8px; vertical-align: middle"
+            >
+            </i>
+            Builds
+          </a>
+        </div>
+        <div>
+          <a href="fit-out.html" class="text-secondary">
+            <i
+              class="bi-shop"
+              style="margin-right: 8px; vertical-align: middle"
+            ></i>
+            Fit outs
+          </a>
+        </div>
+        <div>
+          <a href="contact.html" class="text-secondary">
+            <i
+              class="bi-envelope"
+              style="margin-right: 8px; vertical-align: middle"
+            ></i>
+            Contact us
+          </a>
+        </div>
+      </div>
+      <div
+        class="container d-flex justify-content-between align-items-center mt-3"
+      >
+        <hr class="w-100" style="background: rgba(129, 129, 129, 0.25)" />
+      </div>
+      <div
+        class="container d-flex justify-content-between align-items-center mt-3"
+      >
+        <div>&copy; PSCM. 2020.</div>
+        <div>
+          <a href="privacy.html">Privacy Policy</a> |
+          <a
+            id="footer-consent-link"
+            class="text-primary"
+            style="cursor: pointer"
+          >
+            Remove cookie consent
+          </a>
+        </div>
       </div>
     </footer>
+
+    <!-- jQuery library required for modals -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap libraries required for modals and image galleries -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- User confirmation of cookie consent script -->
+    <script src="js/cookieConsent.js"></script>
+
+    <!-- Scroll to top button script -->
     <script src="js/backToTop.js"></script>
+
+    <!-- Validate form input script -->
     <script src="js/emailValidation.js"></script>
   </body>
 </html>

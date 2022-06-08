@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* Cookie icon created by Freepik - Flaticon https://www.flaticon.com/free-icons/cookie */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  line-height: 1.5rem;
+  line-height: 1.5em;
   font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
 }
 
 small i {
@@ -27,11 +32,11 @@ small i {
 nav::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 2px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 1);
+  box-shadow: 0 -3px 3px rgba(8, 107, 156, 1);
   z-index: 100;
 }
 
@@ -51,6 +56,20 @@ iframe {
   max-width: 100%;
 }
 
+.cookie-container {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .nav-link {
   border-radius: 3px;
   line-height: 32px;
@@ -59,7 +78,7 @@ iframe {
   display: block;
   border: 1px solid transparent;
   color: #3d405c;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .col .nav-link {
@@ -123,6 +142,41 @@ ul {
   display: none;
 }
 
+.about-img {
+  width: 80%;
+  height: 80%;
+}
+
+.outside {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.success {
+  background-color: #28a745;
+}
+
+.error {
+  background-color: #ff0000;
+}
+
+.inside {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: white;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.recaptchaCheck,
+.invalidInput {
+  margin-top: 10px;
+}
+
 @media screen and (min-width: 992px) {
   main {
     margin-bottom: unset;
@@ -156,7 +210,8 @@ ul {
     left: 0;
     width: 100%;
     height: 2px;
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 1);
+    /* box-shadow: 0px 0 10px rgba(0, 0, 0, 1); */
+    /* border-bottom: solid 3px rgba(8, 107, 156, 0.4); */
     z-index: 100;
   }
 
@@ -174,8 +229,16 @@ ul {
 }
 
 @media screen and (max-width: 992px) {
+  .form-group {
+    width: 100%;
+  }
+
   .navbar-lg {
     display: none;
+  }
+
+  .btn {
+    margin-bottom: 20px;
   }
 }
 
@@ -204,7 +267,7 @@ body {
 }
 
 a {
-  display: block;
+  word-wrap: break-word;
 }
 
 .contact-form {
@@ -221,6 +284,11 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.about-img {
+  width: 100%;
+  margin-bottom: -120px;
 }
 
 @media screen and (max-width: 990px) {
@@ -319,6 +387,8 @@ html {
   display: none;
   background-color: #fff;
   border-radius: 50%;
+  width: 50px;
+  height: 50px;
   padding: 10px;
   position: fixed;
   bottom: 100px;
@@ -441,4 +511,11 @@ footer {
 
 footer li {
   float: left;
+}
+
+@media only screen and (max-width: 500px) {
+  .g-recaptcha {
+    transform: scale(0.95);
+    transform-origin: 0 0;
+  }
 }

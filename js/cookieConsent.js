@@ -1,5 +1,6 @@
 const acceptBtn = document.getElementById("accept-btn");
 const declineBtn = document.getElementById("decline-btn");
+const closeBtn = document.getElementById("closeCookieModal");
 const footerBtn = document.getElementById("footer-consent-link");
 
 const contactFormContainer = document.getElementById("contact-form");
@@ -94,6 +95,12 @@ function addRecaptcha() {
 }
 
 acceptBtn.addEventListener("click", () => {
+  addRecaptcha();
+  addMap();
+  location.reload();
+});
+
+closeBtn.addEventListener("click", () => {
   addRecaptcha();
   addMap();
   location.reload();

@@ -5,6 +5,7 @@ const footerBtn = document.getElementById("footer-consent-link");
 
 const contactFormContainer = document.querySelector(".contact-form");
 const contactDetailsHeader = document.getElementById("contactDetailsHeader");
+const map = document.getElementById("map-container");
 const myModal = document.getElementById("myModal");
 const alertLabel = document.querySelector(".alert");
 
@@ -65,9 +66,7 @@ function deleteCookie() {
     alertLabel.style.display = "none";
   }, 5000);
   contactFormContainer.style.display = "none";
-  contactFormTitle.textContent = "How to contact us";
-  contactUsText.textContent =
-    "For further information about anything you've seen on this site, or to get a quote for your project, please don't hesitate to give us a call on the number below. Cookies are required to be enabled to use the contact form.";
+  map.parentNode.removeChild(map);
 }
 
 function addRecaptcha() {
@@ -96,9 +95,9 @@ function addRecaptcha() {
 }
 
 acceptBtn.addEventListener("click", () => {
+  location.reload();
   addRecaptcha();
   addMap();
-  location.reload();
 });
 
 closeBtn.addEventListener("click", () => {

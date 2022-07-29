@@ -55,10 +55,12 @@
       </div>
     </div>
     <!-- Header section -->
-    <header class="mb-2">
-      <div class="container mt-3 mb-3">
+    <header class="py-2">
+      <div class="container py-2">
         <!-- Navigation for smart phones -->
-        <img src="images/logo.png" alt="PSCM logo" class="header-logo" />
+        <a href="index.html">
+          <img src="images/logo.png" alt="PSCM logo" class="header-logo" />
+        </a>
         <nav class="navbar navbar-sm bg-white fixed-bottom">
           <div class="col">
             <a href="index.html" class="nav-link">
@@ -86,36 +88,99 @@
             </a>
           </div>
         </nav>
+        <!-- Navigation for laptops -->
+        <nav
+          class="navbar navbar-dark navbar-md text-start"
+          aria-label="First navbar example"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="PSCM logo" class="nav-logo" />
+            </a>
+            <button
+              class="navbar-toggler bg-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample01"
+              aria-controls="navbarsExample01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse bg-dark"
+              id="navbarsExample01"
+              style="
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+              "
+            >
+              <ul class="navbar-nav me-auto mb-2 px-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <i class="bi-house-door" style="margin-right: 10px"></i>Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">
+                    <i class="bi-people" style="margin-right: 10px"></i>About us
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <i class="bi-bricks" style="margin-right: 10px"></i>Builds
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="fit-out.html">
+                    <i class="bi-shop-window" style="margin-right: 10px"></i>Fit
+                    outs
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">
+                    <i class="bi-envelope" style="margin-right: 10px"></i
+                    >Contact us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         <!-- Navigation for desktops -->
         <nav class="navbar navbar-lg">
-          <div class="col">
-            <img src="images/logo.png" alt="PSCM logo" class="nav-logo" />
-          </div>
-          <div class="col"></div>
-          <div class="col">
-            <a href="index.html" class="nav-link">
-              <i class="bi-house-door"></i> <span>Home</span>
-            </a>
-          </div>
-          <div class="col">
-            <a href="about.html" class="nav-link">
-              <i class="bi-people"></i> <span>About us</span>
-            </a>
-          </div>
-          <div class="col">
-            <a href="#" class="nav-link active bold-text">
-              <i class="bi-bricks"></i> <span>Builds</span>
-            </a>
-          </div>
-          <div class="col">
-            <a href="fit-out.html" class="nav-link">
-              <i class="bi-shop"></i> <span>Fit outs</span>
-            </a>
-          </div>
-          <div class="col">
-            <a href="contact.html" class="nav-link">
-              <i class="bi-envelope"></i> <span>Contact us</span>
-            </a>
+          <div class="row">
+            <div class="col">
+              <img src="images/logo.png" alt="PSCM logo" class="nav-logo" />
+            </div>
+            <div class="col"></div>
+            <div class="col">
+              <a href="index.html" class="nav-link">
+                <i class="bi-house-door"></i> <span>Home</span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="about.html" class="nav-link">
+                <i class="bi-people"></i> <span>About us</span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="nav-link active bold-text">
+                <i class="bi-bricks"></i> <span>Builds</span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="fit-out.html" class="nav-link">
+                <i class="bi-shop"></i> <span>Fit outs</span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="contact.html" class="nav-link">
+                <i class="bi-envelope"></i> <span>Contact us</span>
+              </a>
+            </div>
           </div>
         </nav>
       </div>

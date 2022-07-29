@@ -6,35 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="View our previous fit out projects such as Sterling Home, Bayne's bakers, Clansman Hotel in Loch Ness and many more."
+      content="Based in Cumbernauld, we specialise in build and fit out projects across Scotland in Retail, Hospitality, Bar and Commercial environments."
     />
     <meta name="robots" content="index, follow" />
     <title>Fit out projects - PSCM Construction & Interiors Ltd.</title>
 
     <!-- Bootstrap CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
 
     <!-- Bootstrap Icons CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
 
     <!-- Page CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Favourites Icon -->
-    <link rel="shortcut icon" href="images/android-chrome-512x512.png" />
+    <link rel="shortcut icon" href="../images/android-chrome-512x512.png" />
+
+    <!-- Site Manifest -->
+    <link rel="manifest" href="manifest.json" />
 
     <!-- Preferred URL -->
-    <link rel="canonical" href="https://www.pscm.uk/fit-out.html" />
+    <link rel="canonical" href="https://www.pscm.uk/" />
   </head>
   <body>
+    <!-- Cookie consent removed banner -->
     <div
       class="alert alert-success alert-dismissible fade fixed-top"
       role="alert"
@@ -50,9 +54,11 @@
         Cookie consent <strong class="ml-1"> removed!</strong>
       </div>
     </div>
-    <!-- Header Area (with responsive navbar) -->
-    <header>
-      <div class="container mb-3">
+    <!-- Header section -->
+    <header class="mb-2">
+      <div class="container mt-3 mb-3">
+        <!-- Navigation for smart phones -->
+        <img src="../images/logo.png" alt="PSCM logo" class="header-logo" />
         <nav class="navbar navbar-sm bg-white fixed-bottom">
           <div class="col">
             <a href="index.html" class="nav-link">
@@ -69,8 +75,11 @@
               <i class="bi-bricks"></i>
             </a>
           </div>
-          <div class="col border-bottom border-primary">
-            <a href="#" class="nav-link primary bold-text">
+          <div class="col">
+            <a
+              href="#"
+              class="nav-link border-bottom border-primary active bold-text"
+            >
               <i class="bi-shop-window"></i>
             </a>
           </div>
@@ -80,7 +89,12 @@
             </a>
           </div>
         </nav>
-        <nav class="navbar navbar-lg bg-white">
+        <!-- Navigation for desktops -->
+        <nav class="navbar navbar-lg">
+          <div class="col">
+            <img src="../images/logo.png" alt="PSCM logo" class="nav-logo" />
+          </div>
+          <div class="col"></div>
           <div class="col">
             <a href="index.html" class="nav-link">
               <i class="bi-house-door"></i> <span>Home</span>
@@ -97,8 +111,8 @@
             </a>
           </div>
           <div class="col">
-            <a href="#" class="nav-link primary bold-text">
-              <i class="bi-shop"></i> <span>fit outs</span>
+            <a href="#" class="nav-link active bold-text">
+              <i class="bi-shop"></i> <span>Fit outs</span>
             </a>
           </div>
           <div class="col">
@@ -109,936 +123,801 @@
         </nav>
       </div>
     </header>
-
+    <!-- Page content -->
     <main>
-      <!-- Start of Back to top button -->
+      <!-- Back to top button -->
       <button id="myBtn" title="Go to top" class="text-primary">
         <i class="bi-arrow-up-circle"></i>
       </button>
-      <!-- End of Back to top button -->
+      <!-- Page Header -->
       <div class="container">
         <div class="row">
-          <div class="col-sm">
-            <img src="images/logo.png" />
-            <hr />
-          </div>
-        </div>
-        <div class="row mb-3">
           <div class="col-md">
             <h1 class="text-secondary">Fit out Projects</h1>
-            <h5 class="alert alert-primary text-center" role="alert">
-              <i class="bi-zoom-in"></i>
-              Click / tap on an image to load it's gallery.
+            <h5 class="alert alert-secondary text-center" role="alert">
+              Use the <i class="bi-zoom-in"></i> to see more images.
             </h5>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md">
-            <ul class="nav nav-tabs" id="myTab">
-              <li class="active">
-                <a data-toggle="tab" href="#retail">Retail</a>
-              </li>
-              <li>
-                <a data-toggle="tab" href="#hospitality">Hospitality</a>
-              </li>
-            </ul>
-
-            <div class="tab-content my-tab">
-              <div id="retail" class="tab-pane active">
-                <div class="row mt-5 mb-5">
-                  <div class="col-sm-6 order-sm-1">
-                    <h3 class="">Sterling Home</h3>
-                    <h6>
-                      <i class="bi-pin-map" style="margin-right: 10px"></i
-                      >Dunfermline
-                    </h6>
-                    <hr />
-                    PSCM were principle contractor in the extensive
-                    refurbishment of the exterior and interior of Sterling Home,
-                    Dunfermline.
-                  </div>
-                  <div class="col-sm-6 order-sm-12 imgLink">
-                    <img
-                      src="images/sterling-dunfermline1.JPG"
-                      alt="Image of Sterling Home interior"
-                      class="img-thumbnail"
-                      data-toggle="modal"
-                      data-target="#dunfermlineModal"
-                    />
-                    <div class="centered h1">
-                      <i
-                        class="bi-zoom-in"
-                        data-toggle="modal"
-                        data-target="#dunfermlineModal"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Sterling - Dunfermline -->
-                <div class="row mb-5">
-                  <div class="col-sm-6 order-sm-12">
-                    <h3 class="">Sterling Home</h3>
-                    <h6>
-                      <i class="bi-pin-map" style="margin-right: 10px"></i
-                      >London Road, Glasgow
-                    </h6>
-                    <hr />
-                    PSCM were principle contractor in the extensive
-                    refurbishment of the exterior and interior of Sterling Home,
-                    London Road.
-                  </div>
-                  <div class="col-sm-6 order-sm-1 imgLink">
-                    <img
-                      src="images/sterling-glasgow1.jpg"
-                      alt="Image of Sterling Home interior"
-                      class="img-thumbnail"
-                      data-toggle="modal"
-                      data-target="#londonModal"
-                    />
-                    <div class="centered h1">
-                      <i
-                        class="bi-zoom-in"
-                        data-toggle="modal"
-                        data-target="#londonModal"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Sterling - Glasgow -->
-                <div class="row mb-5">
-                  <div class="col-md">
-                    <h3 class="">Clansman Hotel Gift Shop</h3>
-                    <h6>
-                      <i class="bi-pin-map" style="margin-right: 10px"></i>Loch
-                      Ness
-                    </h6>
-                    <hr />
-                    PSCM carried out the design and installation of a new
-                    tourist gift shop within the Clansman Hotel including the
-                    commisioning of a full scale model of <i>Nessie.</i>
-                  </div>
-                  <div class="col-md">
-                    <img
-                      src="images/loch-ness.jpg"
-                      alt="Image of Clansman Hotel Gift Shop"
-                      class="img-thumbnail"
-                    />
-                  </div>
-                </div>
-                <!-- End of Clansman Gift Shop -->
-                <div class="row mb-5">
-                  <div class="col-sm-6 order-sm-12">
-                    <h3 class="">Bayne's</h3>
-                    <h6>
-                      <i class="bi-pin-map" style="margin-right: 10px"></i>Alva
-                    </h6>
-                    <hr />
-                    PSCM carried out the complete strip out and refurbishment,
-                    including new shop front and full interior fit out.
-                    <p></p>
-                    This project was successfully carried out and completed over
-                    a 9 day programme period.
-                  </div>
-                  <div class="col-sm-6 order-sm-1 imgLink">
-                    <img
-                      src="images/baynes-alva.jpg"
-                      alt="Image of Bayne's Bakers"
-                      class="img-thumbnail"
-                      data-toggle="modal"
-                      data-target="#baynesModal"
-                    />
-                    <div class="centered h1">
-                      <i
-                        class="bi-zoom-in"
-                        data-toggle="modal"
-                        data-target="#baynesModal"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Baynes -->
+        <div class="row mb-3">
+          <div class="d-flex justify-content-center align-items-center col-md">
+            <button class="btn btn-primary mx-5" id="retailBtn">Retail</button>
+            <button class="btn btn-outline-primary mx-5" id="hospitalityBtn">
+              Hospitality
+            </button>
+          </div>
+        </div>
+        <!-- Retail Panel -->
+        <div id="retailPanel">
+          <!-- Sterling Home, Dunfermline -->
+          <div class="row mb-5">
+            <div class="col-sm-6 order-sm-1">
+              <h3 class="">Sterling Home</h3>
+              <h6>
+                <i class="bi-pin-map-fill" style="margin-right: 10px"></i>
+                Dunfermline
+              </h6>
+              <hr />
+              PSCM were the fit-out contractor for the interior refurbishment of
+              Sterling Home, Dunfermline. Our works included the design
+              interpretation and manufacture of shop fitting units, fixtures and
+              cash desks, including POS and visual merchandising displays.
+            </div>
+            <div class="col-sm-6 order-sm-1 imgLink">
+              <img
+                src="images/sterling-dunfermline1.jpg"
+                alt="Image of Sterling Home interior"
+                class="about-img"
+                data-bs-toggle="modal"
+                data-bs-target="#dunfermlineModal"
+              />
+              <div class="centered h1">
+                <i
+                  class="bi-zoom-in"
+                  data-bs-toggle="modal"
+                  data-bs-target="#dunfermlineModal"
+                ></i>
               </div>
-              <!-- End of Retail Tab -->
-              <div id="hospitality" class="tab-pane fade">
-                <div class="row mb-5">
-                  <div class="col-sm-6 order-sm-12">
-                    <h3 class="">Self catering holiday homes</h3>
-                    <h6>
-                      <i class="bi-pin-map" style="margin-right: 10px"></i
-                      >Letterfinlay
-                    </h6>
-                    <hr />
-                    PSCM were the principle contractor for the fit out of six
-                    number new, larch clad holiday homes consisting of a mix of
-                    2 and 3 bedroom luxury properties.
-                  </div>
-                  <div class="col-sm-6 order-sm-1 imgLink">
-                    <img
-                      src="images/letterfinlay-fit-out-1.jpg"
-                      alt="Image of Letterfinlay interior"
-                      class="img-thumbnail"
-                      data-toggle="modal"
-                      data-target="#letterfinlayModal"
-                    />
-                    <div class="centered h1">
-                      <i
-                        class="bi-zoom-in"
-                        data-toggle="modal"
-                        data-target="#letterfinlayModal"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Self catering holiday homes - Letterfinlay -->
-                <div class="row mb-5">
-                  <div class="col-md mt-4">
-                    <h3 class="">Clansman Hotel</h3>
-                    <h6>
-                      <i class="bi-pin-map" style="margin-right: 10px"></i>Loch
-                      Ness
-                    </h6>
-                    <hr />
-                    PSCM were the principle contractor for a full refurbishment
-                    of bedrooms including full bathroom fit out and supply of
-                    bedroom furniture.
-                  </div>
-                  <div class="col-md mt-4 imgLink">
-                    <img
-                      src="images/clansman1.jpg"
-                      alt="Image of Clansman Hotel"
-                      class="img-thumbnail"
-                      data-toggle="modal"
-                      data-target="#clansmanModal"
-                    />
-                    <div class="centered h1">
-                      <i
-                        class="bi-zoom-in"
-                        data-toggle="modal"
-                        data-target="#clansmanModal"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Clansman Hotel -->
-                <div class="row mb-5">
-                  <div class="col-sm-6 order-sm-12">
-                    <h3 class="">Sprinkle Tops</h3>
-                    <h6>
-                      <i class="bi-pin-map" style="margin-right: 10px"></i
-                      >Bonnybridge
-                    </h6>
-                    <hr />
-                    PSCM carried out the design and full all-trades
-                    refurbishment of this quality ice cream shop.
-                  </div>
-                  <div class="col-sm-6 order-sm-1">
-                    <img
-                      src="images/sprinkle-tops.jpg"
-                      alt="Image of Sprinkle Tops interior"
-                      class="img-thumbnail"
-                    />
-                  </div>
-                </div>
-                <!-- End of Sprinkle Tops -->
-                <div class="row mb-5">
-                  <div class="col-md">
-                    <h3 class="">Cobbs cafe</h3>
-                    <h6>
-                      <i class="bi-pin-map" style="margin-right: 10px"></i
-                      >Dunfermline
-                    </h6>
-                    <hr />
-                    As part of the creation of Sterling Home store, PSCM carried
-                    out the installation of the new Cobbs cafe including full
-                    commercial kitchen installation and front of house area for
-                    60 covers.
-                  </div>
-                  <div class="col-md">
-                    <img
-                      src="images/cobbs.JPG"
-                      alt="Image of Cobbs cafe"
-                      class="img-thumbnail"
-                    />
-                  </div>
-                </div>
-                <!-- End of Cobbs Dunfermline -->
-                <div class="row mb-5">
-                  <div class="col-sm-6 order-sm-12">
-                    <h3 class="">Cobbs cafe</h3>
-                    <h6>
-                      <i class="bi-pin-map" style="margin-right: 10px"></i
-                      >London Road, Glasgow
-                    </h6>
-                    <hr />
-                    As part of the refurbishment of Sterling Home store, PSCM
-                    gave Cobbs cafe a modern face lift and fit out.
-                  </div>
-                  <div class="col-sm-6 order-sm-1 imgLink">
-                    <img
-                      src="images/cobbs.JPG"
-                      alt="Image of Cobbs cafe"
-                      class="img-thumbnail"
-                      data-toggle="modal"
-                      data-target="#cobbsModal"
-                    />
-                    <div class="centered h1">
-                      <i
-                        class="bi-zoom-in"
-                        data-toggle="modal"
-                        data-target="#cobbsModal"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Cobbs - Glasgow -->
+            </div>
+          </div>
+          <!-- Sterling Home, Glasgow -->
+          <div class="row mb-5">
+            <div class="col-sm-6 order-sm-1">
+              <h3 class="">Sterling Home</h3>
+              <h6>
+                <i class="bi-pin-map-fill" style="margin-right: 10px"></i>London
+                Road, Glasgow
+              </h6>
+              <hr />
+              PSCM were the principle contractor for the interior refurbishment
+              of Sterling Home, London Road, Glasgow. Our works included the
+              design interpretation and manufacture of shop fitting units,
+              fixtures and cash desks, including POS and visual merchandising
+              displays.
+            </div>
+            <div class="col-sm-6 order-sm-6 imgLink">
+              <img
+                src="images/sterling-london-road-interior.jpg"
+                alt="Image of Sterling Home interior"
+                class="about-img"
+                data-bs-toggle="modal"
+                data-bs-target="#glasgowModal"
+              />
+              <div class="centered h1">
+                <i
+                  class="bi-zoom-in"
+                  data-toggle="modal"
+                  data-target="#glasgowModal"
+                ></i>
               </div>
-              <!-- End of Hospitality Tab -->
+            </div>
+          </div>
+          <!-- Clansman, Loch Ness -->
+          <div class="row mb-5">
+            <div class="col-md">
+              <h3 class="">Clansman Hotel Gift Shop</h3>
+              <h6>
+                <i class="bi-pin-map-fill" style="margin-right: 10px"></i>Loch
+                Ness
+              </h6>
+              <hr />
+              PSCM carried out the design and installation of a new tourist gift
+              shop within the Clansman Hotel including the commissioning of a
+              full scale model of <strong>Nessie</strong>.
+            </div>
+            <div class="col-md">
+              <img
+                src="images/loch-ness.jpg"
+                alt="Image of Clansman Hotel Gift Shop"
+                class="about-img"
+              />
+            </div>
+          </div>
+          <!-- Baynes, Alva -->
+          <div class="row mb-5">
+            <div class="col-sm-6 order-sm-1">
+              <h3 class="">Bayne's</h3>
+              <h6>
+                <i class="bi-pin-map-fill" style="margin-right: 10px"></i>Alva
+              </h6>
+              <hr />
+              As principle contractor, PSCM carried out the complete strip out
+              and refurbishment, including new shop front and full interior fit
+              out.
+              <p></p>
+              This project was successfully carried out and completed over a
+              nine day programme period.
+            </div>
+            <div class="col-sm-6 order-sm-6 imgLink">
+              <img
+                src="images/baynes-alva.jpg"
+                alt="Image of Bayne's Bakers"
+                class="about-img"
+                data-bs-toggle="modal"
+                data-bs-target="#baynesModal"
+              />
+              <div class="centered h1">
+                <i
+                  class="bi-zoom-in"
+                  data-bs-toggle="modal"
+                  data-bs-target="#baynesModal"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- End of Baynes -->
+        </div>
+        <!-- Hospitality Panel -->
+        <div id="hospitalityPanel" class="hidden">
+          <div class="row mb-5">
+            <div class="col-sm-6 order-sm-6">
+              <h3 class="">Self catering holiday homes</h3>
+              <h6>
+                <i class="bi-pin-map-fill" style="margin-right: 10px"></i
+                >Whispering Pine Cottages, Letterfinlay
+              </h6>
+              <hr />
+              <p>
+                PSCM were the principle contractor for the construction and
+                interior fit out of six number new, larch clad deluxe holiday
+                homes consisting of a mix of 2 and 3 bedroom luxury units.
+                <br />Built on the side of Loch Lochy, these outstanding
+                properties merged into and reflect the natural beauty of their
+                surroundings.
+              </p>
+              <p>
+                Working directly with the clients own design team, PSCM produced
+                an interior fit-out reflecting the quality and uniqueness that
+                our client strives for and expects for their guests.
+              </p>
+            </div>
+            <div class="col-sm-6 order-sm-1 imgLink">
+              <img
+                src="images/letterfinlay-fit-out-1.jpg"
+                alt="Image of Letterfinlay interior"
+                class="about-img"
+                data-bs-toggle="modal"
+                data-bs-target="#letterfinlayModal"
+              />
+              <div class="centered h1">
+                <i
+                  class="bi-zoom-in"
+                  data-bs-toggle="modal"
+                  data-bs-target="#letterfinlayModal"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md mt-4 order-sm-1">
+              <h3 class="">Clansman Hotel</h3>
+              <h6>
+                <i class="bi-pin-map-fill" style="margin-right: 10px"></i>Loch
+                Ness
+              </h6>
+              <hr />
+              PSCM were the principle contractor for the full refurbishment of
+              seven bedrooms including full bathroom fit out and supply of
+              bedroom furniture in this popular tourist destination on the banks
+              of Loch Ness.
+            </div>
+            <div class="col-md mt-4 order-sm-6 imgLink">
+              <img
+                src="images/clansman1.jpg"
+                alt="Image of Clansman Hotel"
+                class="about-img"
+                data-bs-toggle="modal"
+                data-bs-target="#clansmanModal"
+              />
+              <div class="centered h1">
+                <i
+                  class="bi-zoom-in"
+                  data-bs-toggle="modal"
+                  data-bs-target="#clansmanModal"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- End of Clansman Hotel -->
+          <div class="row mb-5">
+            <div class="col-sm-6 order-sm-6">
+              <h3 class="">Sprinkle Tops</h3>
+              <h6>
+                <i class="bi-pin-map-fill" style="margin-right: 10px"></i
+                >Bonnybridge
+              </h6>
+              <hr />
+              PSCM carried out the design and full all-trades refurbishment of
+              this quality ice cream shop.
+            </div>
+            <div class="col-sm-6 order-sm-1">
+              <img
+                src="images/sprinkle-tops.jpg"
+                alt="Image of Sprinkle Tops interior"
+                class="about-img"
+              />
+            </div>
+          </div>
+          <!-- End of Sprinkle Tops -->
+          <div class="row mb-5">
+            <div class="col-md order-sm-1">
+              <h3 class="">Cobbs cafe</h3>
+              <h6>
+                <i class="bi-pin-map-fill" style="margin-right: 10px"></i
+                >Dunfermline
+              </h6>
+              <hr />
+              As part of the creation of Sterling Home store, PSCM carried out
+              the installation of the new Cobbs cafe including full commercial
+              kitchen installation and front of house area for 60 covers.
+            </div>
+            <div class="col-md order-sm-6 imgLink">
+              <img
+                src="images/cobbs-dunfermline.jpg"
+                alt="Image of Cobbs cafe"
+                class="about-img"
+                data-bs-toggle="modal"
+                data-bs-target="#cobbsDunfermlineModal"
+              />
+              <div class="centered h1">
+                <i
+                  class="bi-zoom-in"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cobbsDunfermlineModal"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- End of Cobbs Dunfermline -->
+          <div class="row mb-5">
+            <div class="col-sm-6 order-sm-6">
+              <h3 class="">Cobbs cafe</h3>
+              <h6>
+                <i class="bi-pin-map-fill" style="margin-right: 10px"></i>London
+                Road, Glasgow
+              </h6>
+              <hr />
+              As part of the refurbishment of Sterling Home store, PSCM gave
+              Cobbs cafe a modern face lift and fit out.
+            </div>
+            <div class="col-sm-6 order-sm-1 imgLink">
+              <img
+                src="images/cobbs-glasgow.jpg"
+                alt="Image of Cobbs cafe"
+                class="about-img"
+                data-bs-toggle="modal"
+                data-bs-target="#cobbsGlasgowModal"
+              />
+              <div class="centered h1">
+                <i
+                  class="bi-zoom-in"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cobbsGlasgowModal"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- End of Cobbs - Glasgow -->
+          <div class="row mb-5">
+            <div class="col-sm-6 order-sm-1">
+              <h3 class="">Cobbs cafe</h3>
+              <h6>
+                <i class="bi-pin-map-fill" style="margin-right: 10px"></i>Bridge
+                of Don, Aberdeen
+              </h6>
+              <hr />
+              As part of the refurbishment of Sterling Home store, PSCM gave
+              Cobbs cafe a modern face lift and fit out.
+            </div>
+            <div class="col-sm-6 order-sm-6 imgLink">
+              <img
+                src="images/cobbs-aberdeen.jpg"
+                alt="Image of Cobbs cafe"
+                class="about-img"
+              />
             </div>
           </div>
         </div>
+
+        <!-- End of Hospitality Tab -->
       </div>
     </main>
-    <footer class="mt-5">
-      <div
-        class="container text-center d-flex justify-content-between align-items-center"
+    <!-- Footer navigation -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 px-3 border-top"
+    >
+      <p class="col-md-4 mb-0 text-muted footer-lg">© 2020 PSCM</p>
+
+      <a
+        href="index.html"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none footer-lg"
       >
-        <div>
-          <a href="index.html" class="text-secondary">
-            <i
-              class="bi-house-door"
-              style="margin-right: 8px; vertical-align: middle"
-            ></i>
-            Home
-          </a>
-        </div>
-        <div>
-          <a href="about.html" class="text-secondary">
-            <i
-              class="bi-people"
-              style="margin-right: 8px; vertical-align: middle"
-            ></i>
-            About us
-          </a>
-        </div>
-        <div>
-          <a href="build.html" class="text-secondary">
-            <i
-              class="bi-bricks"
-              style="margin-right: 8px; vertical-align: middle"
-            >
-            </i>
-            Builds
-          </a>
-        </div>
-        <div>
-          <a href="#">
-            <i
-              class="bi-shop"
-              style="margin-right: 8px; vertical-align: middle"
-            ></i>
-            Fit outs
-          </a>
-        </div>
-        <div>
-          <a href="contact.html" class="text-secondary">
-            <i
-              class="bi-envelope"
-              style="margin-right: 8px; vertical-align: middle"
-            ></i>
-            Contact us
-          </a>
-        </div>
-      </div>
-      <div
-        class="container d-flex justify-content-between align-items-center mt-3"
-      >
-        <hr class="w-100" style="background: rgba(129, 129, 129, 0.25)" />
-      </div>
-      <div
-        class="container d-flex justify-content-between align-items-center mt-3"
-      >
-        <div>&copy; PSCM. 2020.</div>
-        <div>
-          <a href="privacy.html">Privacy Policy</a> |
-          <a
-            class="text-primary"
-            style="cursor: pointer"
-            id="footer-consent-link"
+        <img
+          src="images/logo-big.png"
+          alt="PSCM logo"
+          style="filter: brightness(0%); width: 150px"
+          class="footer-lg"
+        />
+      </a>
+      <ul class="nav col-md-4 justify-content-end footer-lg">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link px-2">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link px-2">About us</a>
+        </li>
+        <li class="nav-item">
+          <a href="build.html" class="nav-link px-2">Builds</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-primary bold-text">Fit outs</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link px-2">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a href="privacy.html" class="nav-link px-2">Privacy Policy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2" id="footer-consent-link"
+            >Remove cookie consent</a
           >
-            Remove cookie consent
-          </a>
-        </div>
+        </li>
+      </ul>
+      <div class="nav col-md-4 justify-content-center footer-sm">
+        <a href="#" class="nav-link px-2 text-muted">Privacy Policy</a>
+        <a href="#" class="nav-link px-2 text-muted" id="footer-consent-link">
+          Remove cookie consent
+        </a>
+        <p class="px-2">&copy; PSCM 2020</p>
       </div>
     </footer>
-    <!-- Dunfermline Modal -->
-    <div
-      class="modal fade"
-      id="dunfermlineModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="dunfermlineModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Image modals - Retail -->
+    <!-- Sterling Home, dunfermline -->
+    <div class="modal" tabindex="-1" id="dunfermlineModal">
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#dunfermlineCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#dunfermlineCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title" id="dunfermlineModalLongTitle">
-              <h4>Sterling Home</h4>
-              <h6>
-                <i class="bi-pin-map" style="margin-right: 10px"></i>Dunfermline
-              </h6>
-            </div>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div
-              id="carouselletterfinlayControls1"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="images/sterling-dunfermline1.JPG"
-                    alt="Image of Sterling Home interior"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/sterling-dunfermline2.JPG"
-                    alt="Image of Sterling Home interior"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/sterling-dunfermline3.JPG"
-                    alt="Image of Sterling Home interior"
-                  />
-                </div>
+          <div
+            id="dunfermlineCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-keyboard="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/sterling-dunfermline1.jpg" alt="" />
               </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselletterfinlayControls1"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselletterfinlayControls1"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="carousel-item">
+                <img src="images/sterling-dunfermline2.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/sterling-dunfermline3.jpg" alt="" />
+              </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close Gallery
-            </button>
+            <i class="bi-pin-map-fill" style="margin-right: 10px"></i>
+            Sterling Home, Dunfermline
           </div>
         </div>
       </div>
     </div>
-    <!-- Glasgow Modal -->
-    <div
-      class="modal fade"
-      id="londonModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="londonModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Sterling Home, Glasgow -->
+    <div class="modal" tabindex="-1" id="glasgowModal">
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#glasgowCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#glasgowCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title" id="londonModalLongTitle">
-              <h4>Sterling Home</h4>
-              <h6>
-                <i class="bi-pin-map" style="margin-right: 10px"></i>London
-                Road, Glasgow
-              </h6>
-            </div>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div
-              id="carousellondonControls1"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="images/sterling-glasgow1.jpg"
-                    alt="Image of Sterling Home interior"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/sterling-glasgow2.jpg"
-                    alt="Image of Sterling Home interior"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/sterling-glasgow3.JPG"
-                    alt="Image of Sterling Home interior"
-                  />
-                </div>
+          <div
+            id="glasgowCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-keyboard="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/sterling-london-road-interior.jpg"
+                  alt="Sterling Home, Glasgow, Exterior"
+                />
               </div>
-              <a
-                class="carousel-control-prev"
-                href="#carousellondonControls1"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carousellondonControls1"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="carousel-item">
+                <img
+                  src="images/sterling-glasgow1.jpg"
+                  alt="Sterling Home, Glasgow, Exterior"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/sterling-glasgow2.jpg"
+                  alt="Sterling Home, Glasgow, Exterior"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/sterling-glasgow3.jpg"
+                  alt="Sterling Home, Glasgow, Exterior"
+                />
+              </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close Gallery
-            </button>
+          <div class="modal-footer smaller-text">
+            <i class="bi-pin-map-fill" style="margin-right: 10px"></i>
+            Sterling Home, London Road, Glasgow
           </div>
         </div>
       </div>
     </div>
-    <!-- Baynes Modal -->
-    <div
-      class="modal fade"
-      id="baynesModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="baynesModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Baynes, Alva -->
+    <div class="modal" tabindex="-1" id="baynesModal">
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#baynesCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#baynesCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title" id="baynesModalLongTitle">
-              <h4>Bayne's</h4>
-              <h6><i class="bi-pin-map" style="margin-right: 10px"></i>Alva</h6>
-            </div>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div
-              id="carouselletterfinlayControls2"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="images/baynes-alva.jpg"
-                    alt="Image of Bayne's bakers"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/baynes-alva2.jpg"
-                    alt="Image of Bayne's bakers"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/baynes-alva3.jpg"
-                    alt="Image of Bayne's bakers"
-                  />
-                </div>
+          <div
+            id="baynesCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-keyboard="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/baynes-alva.jpg" alt="Baynes, Alva" />
               </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselletterfinlayControls2"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselletterfinlayControls2"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="carousel-item">
+                <img src="images/baynes-alva2.jpg" alt="Baynes, Alva" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/baynes-alva3.jpg" alt="Baynes, Alva" />
+              </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close Gallery
-            </button>
+            <i class="bi-pin-map-fill" style="margin-right: 10px"></i>
+            Baynes, Alva
           </div>
         </div>
       </div>
     </div>
-    <!-- Clansman Modal -->
-    <div
-      class="modal fade"
-      id="clansmanModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="clansmanModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Image modals - Hospitality -->
+    <!-- Whispering Pine Cottages, Letterfinlay -->
+    <div class="modal" tabindex="-1" id="letterfinlayModal">
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#letterfinlayCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#letterfinlayCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title" id="clansmanModalLongTitle">
-              <h4>Clansman Hotel</h4>
-              <h6>
-                <i class="bi-pin-map" style="margin-right: 10px"></i>Loch Ness
-              </h6>
-            </div>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div
-              id="carouselletterfinlayControls3"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="images/clansman1.jpg"
-                    alt="Image of Clansman Hotel"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/clansman2.jpg"
-                    alt="Image of Clansman Hotel"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/clansman3.jpg"
-                    alt="Image of Clansman Hotel"
-                  />
-                </div>
+          <div
+            id="letterfinlayCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-keyboard="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/letterfinlay-fit-out-1.jpg" alt="" />
               </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselletterfinlayControls3"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselletterfinlayControls3"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="carousel-item">
+                <img src="images/letterfinlay-fit-out-2.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/letterfinlay-fit-out-3.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/letterfinlay-fit-out-4.jpg" alt="" />
+              </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close Gallery
-            </button>
+          <div class="modal-footer smaller-text">
+            <i class="bi-pin-map-fill" style="margin-right: 10px"></i>
+            Whispering Pine Cottages, Letterfinlay
           </div>
         </div>
       </div>
     </div>
-    <!-- Cobbs Glasgow Modal -->
-    <div
-      class="modal fade"
-      id="cobbsModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="cobbsModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Clansman Hotel, Loch Ness -->
+    <div class="modal" tabindex="-1" id="clansmanModal">
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#clansmanCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#clansmanCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title" id="cobbsModalLongTitle">
-              <h4>Cobbs cafe</h4>
-              <h6>
-                <i class="bi-pin-map" style="margin-right: 10px"></i>London
-                Road, Glasgow
-              </h6>
-            </div>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div
-              id="carouselletterfinlayControls4"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="images/cobbs.JPG"
-                    alt="Image of Cobbs cafe"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/cobbs-glasgow2.JPG"
-                    alt="Image of Cobbs cafe"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/cobbs-glasgow1.JPG"
-                    alt="Image of Cobbs cafe"
-                  />
-                </div>
+          <div
+            id="clansmanCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-keyboard="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/clansman1.jpg"
+                  alt="Clansman Hotel, Loch Ness"
+                />
               </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselletterfinlayControls4"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselletterfinlayControls4"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="carousel-item">
+                <img
+                  src="images/clansman2.jpg"
+                  alt="Clansman Hotel, Loch Ness"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/clansman3.jpg"
+                  alt="Clansman Hotel, Loch Ness"
+                />
+              </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close Gallery
-            </button>
+            <i class="bi-pin-map-fill" style="margin-right: 10px"></i>
+            Clansman Hotel, Loch Ness
           </div>
         </div>
       </div>
     </div>
-    <!-- Letterfinlay Modal -->
-    <div
-      class="modal fade"
-      id="letterfinlayModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="letterfinlayModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Cobbs cafe, Dunfermline -->
+    <div class="modal" tabindex="-1" id="cobbsDunfermlineModal">
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#cobbsDunfermlineCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#cobbsDunfermlineCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title" id="letterfinlayModalLongTitle">
-              <h4>Self catering holiday homes</h4>
-              <h6>
-                <i class="bi-pin-map" style="margin-right: 10px"></i
-                >Letterfinlay
-              </h6>
-            </div>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div
-              id="carouselletterfinlayControls5"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="images/letterfinlay-fit-out-1.jpg"
-                    alt="Image of Self catering homes"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/letterfinlay-fit-out-2.jpg"
-                    alt="Image of Self catering homes"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/letterfinlay-fit-out-3.jpg"
-                    alt="Image of Self catering homes"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="images/letterfinlay-fit-out-4.jpg"
-                    alt="Image of Self catering homes"
-                  />
-                </div>
+          <div
+            id="cobbsDunfermlineCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-keyboard="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/cobbs-dunfermline.jpg"
+                  alt="Cobbs cafe, Dunfermline"
+                />
               </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselletterfinlayControls5"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselletterfinlayControls5"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="carousel-item active">
+                <img
+                  src="images/cobbs-dunfermline2.jpg"
+                  alt="Cobbs cafe, Dunfermline"
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="images/cobbs.jpg" alt="Cobbs cafe, Dunfermline" />
+              </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close Gallery
-            </button>
+            <i class="bi-pin-map-fill" style="margin-right: 10px"></i>
+            Cobbs cafe, Dunfermline
           </div>
         </div>
       </div>
     </div>
-    <!-- Javascript for back to top scroll button -->
-    <script src="js/backToTop.js"></script>
-    <!-- JavaScript for Bootstrap components -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Cobbs cafe, Glasgow -->
+    <div class="modal" tabindex="-1" id="cobbsGlasgowModal">
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#cobbsGlasgowCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#cobbsGlasgowCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div
+            id="cobbsGlasgowCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-keyboard="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/cobbs-glasgow.jpg" alt="Cobbs cafe, Glasgow" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/cobbs-glasgow2.jpg"
+                  alt="Cobbs cafe, Glasgow"
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="images/cobbs.jpg" alt="Cobbs cafe, Glasgow" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer smaller-text">
+            <i class="bi-pin-map-fill" style="margin-right: 10px"></i>
+            Cobbs cafe, London Road, Glasgow
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap libraries -->
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- User confirmation of cookie consent script -->
     <script src="js/removeConsent.js"></script>
+
+    <!-- Scroll to top button script -->
+    <script src="js/backToTop.js"></script>
+
+    <!-- Control carousel with arrow keys -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/carousel.js"></script>
+
+    <!-- Fit out panel functionality -->
+    <script src="js/fitOut.js"></script>
   </body>
 </html>
